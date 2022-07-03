@@ -19,18 +19,19 @@ IMG.logo {
 H1.title, H1.destaque, H1.trabalos, H1.linguagens {
     font-family: 'Open Sans', Arial, sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 30px;
     text-align: center
 }
 H1.name {
     font-family: 'Open Sans', Arial, sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 }
 P {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
 }
 ul {
     max-width: auto;
