@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.gifer.com/NzPA.gif");
+    background-size: cover;
+    padding:0;
+    margin:0;
+    background-color: rgb(31, 32, 33);
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('minecraft.ttf') format('truetype');
+}
+IMG.logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    display: block;
+    border-radius: 50%;
+}
+H1.title, H1.destaque, H1.trabalos, H1.linguagens {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center
+}
+H1.name {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+P {
+    color: white;
+    font-size: 25px;
+}
+ul {
+    max-width: auto;
+    max-height: auto;
+    list-style: none;
+    padding: 0;
+    background-image: url("fundo-menu.png");
+}
+
+ul li {
+    display: inline;
+    align-items: center;
+}
+
+ul li a {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: rgb(211, 211, 211);
+}
+ul li:last-child a {
+    float: right;
+}
