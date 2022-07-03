@@ -1,10 +1,11 @@
 body{
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.gifer.com/NzPA.gif");
     background-size: cover;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     background-color: rgb(31, 32, 33);
 }
+
 @font-face {
     font-family: 'Open Sans';
     src: url('minecraft.ttf') format('truetype');
@@ -34,6 +35,8 @@ P {
     color: white;
     font-size: 19px;
     font: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 ul {
     max-width: auto;
