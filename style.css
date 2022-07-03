@@ -20,7 +20,9 @@ H1.title, H1.destaque, H1.trabalos, H1.linguagens {
     font-family: 'Open Sans', Arial, sans-serif;
     color: rgb(255, 255, 255);
     font-size: 30px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 H1.name {
     font-family: 'Open Sans', Arial, sans-serif;
@@ -30,8 +32,8 @@ H1.name {
 }
 P {
     color: white;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 ul {
     max-width: auto;
