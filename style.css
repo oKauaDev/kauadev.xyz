@@ -1,23 +1,26 @@
 body {
     background-color: rgb(39, 39, 39);
-    margin-bottom: 100px;
+    margin: 0;
 }
 
-.bar {
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: black;
     color: white;
-    padding: 30px 0px 0px 30px;
+    padding: 0px;
+    padding-right: 50px;
+    padding-left: 10px;
     margin: 0px;
     display: flex;
 }
 
 .bartitle {
     color: #fff;
-    font-size: 20px
+    font-size: 20px;
+    padding-top: 17px;
 }
 
 .bartitle::first-letter {
@@ -36,7 +39,7 @@ body {
 
 .titles {
     font-weight: bold;
-    color: white;
+    color: #fff;
     margin-top: 10px;
     text-align: center;
 }
@@ -66,42 +69,42 @@ p {
 }
 
 hr {
-    margin: 0;
+    margin: 20px;
+    padding: 0;
+    border: 0.5px solid #fff;
 }
 
 .list {
     color: white;
 }
 
-.bar #f {
+.a-navbar {
     text-decoration: none;
-    padding: 14px;
-    color: white;
-    margin-right: 60px;
-}
-
-.bar #f:hover {
-    color: rgba(255, 255, 255, 0.343);
-}
-
-.bar #f:active {
-    color: #1789e6;
-}
-
-.bar #e {
-    text-decoration: none;
-    padding: 14px;
+    padding: 20px;
     color: white;
 }
 
-.bar #e:hover {
+.a-navbar:hover {
     color: rgba(255, 255, 255, 0.343);
 }
 
-.bar #e:active {
+.a-navbar:active {
     color: #1789e6;
 }
+
 
 #espaco {
     margin-left: auto;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+    margin: 0;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#linguagens-txt {
+    padding-left: 20px;
 }

@@ -11,12 +11,12 @@
     <title>Portifólio LADINO</title>
 </head>
 <body>
-    <div class="bar">
+    <header>
         <p class="bartitle">LADINO</p>
         <div id="espaco"></div>
-        <a id="e" href="https://github.com/LadinoXx">Github</a>
-        <a id="f" onclick="senddiscord()">Discord</a>
-    </div>
+        <a class="a-navbar" href="https://github.com/LadinoXx">Github</a>
+        <a class="a-navbar" onclick="senddiscord()">Discord</a>
+    </header>
     <img id="logo" src="https://cdn.discordapp.com/avatars/668849866805477398/a_308feffc1bbe9c6bb1583087304b0834.gif?si" alt="minha foto">
     <h1 class="titles">SOBRE MIM</h1>
     <div class="sobremim">
@@ -39,7 +39,11 @@
     </ul>
     <hr>
     <h1 class="titles">LINGUAGENS</h1>
-    <p>Já trabalhei com PHP (Pocketmine-MP), HTML, CSS, JS.</p>
+    <p id="linguagens-txt">Já trabalhei com PHP (Pocketmine-MP), HTML, CSS, JS.</p>
+    <br>
+    <footer>
+        <p>Site portifólio LadinoXx<span class="bold"><br> &copy;</span> LadinoXx - 2022</p>
+    </footer>
     <script>
         function senddiscord() {
             alert("Meu discord é : LADINO#0001");
