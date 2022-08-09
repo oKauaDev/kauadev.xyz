@@ -4,50 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portifolio de LADINO#0001">
-    <meta name="author" content="LADINO#0063">
-    <meta name="keyworks" content="portifolio, ladino, dev">
+    <title>Portifolio - Ladino</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portifólio LADINO</title>
 </head>
 <body>
-    <header>
-        <p class="bartitle">LADINO</p>
-        <div id="espaco"></div>
-        <a class="a-navbar" href="https://github.com/LadinoXx">Github</a>
-        <a class="a-navbar" onclick="senddiscord()">Discord</a>
-    </header>
-    <img id="logo" src="https://cdn.discordapp.com/avatars/668849866805477398/a_308feffc1bbe9c6bb1583087304b0834.gif?si" alt="minha foto">
-    <h1 class="titles">SOBRE MIM</h1>
-    <div class="sobremim">
-        <img id="hi" src="https://camo.githubusercontent.com/e8e7b06ecf583bc040eb60e44eb5b8e0ecc5421320a92929ce21522dbc34c891/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966" alt="">
-        <p>Olá meu nome é kauã, tenho 16 anos e sou desenvolvedor web iniciante, esse portfolio estou desenvolvendo enquanto aprendo html e css, já faço alguns trabalhos como desenvolvedor, que são plugins para software Pocketmine-MP, já faço esses serviços há mais de 2 anos, e por enquanto quero me aprofundar no desenvolvimento web.</p>
+    <div id="container">
+        <header>
+            <img id="LLogo" src="https://cdn.discordapp.com/avatars/668849866805477398/a_308feffc1bbe9c6bb1583087304b0834.gif?size=2048">
+            <div id="separator-left"></div>
+            <a class="link-header" onclick="senddiscord()">Discord</a>
+            <a class="link-header" href="https://github.com/LadinoXx">Github</a>
+            <div id="separator-rigth"></div>
+            <img width="25px" style="visibility: hidden;">
+        </header>
+        <div id="principais-projetos">
+            <center>
+                <h1 id="principais-projetos">Meus principais repositorios</h1>
+                <h4 id="h4-view-projects">Veja os meus principais projetos</h4>
+                <a class="button-t1" href="https://github.com/LadinoXx/PlayScript">PlayScript</a>
+                <a class="button-t1" href="https://github.com/LadinoXx/InfinitSlots">InfinitSlots</a>
+            </center>
+        </div>
+        <div>
+            <center>
+                <p class="principais-servers">VEJA ALGUNS DOS PRINCIPAIS SERVIDORES QUE JÀ TRABALHEI.</p>
+                <img class="servers" width="100px" src="https://cdn.discordapp.com/icons/869308624122552320/a_2800f8c1e66ecee307f3251161ef33c1.gif?size=2048">
+                <img class="servers" width="100px" src="https://cdn.discordapp.com/attachments/910598384719634466/1006537577945370634/pack_icon.png">
+                <img class="servers" width="100px" src="https://cdn.discordapp.com/attachments/910598384719634466/1006537702172282880/1629978336436.png">
+            </center>
+        </div>
+        <div id="skills">
+            <center>
+                <div class="skill">
+                    <img width="25px" src="https://cdn.discordapp.com/attachments/910598384719634466/1006540292402454548/dev.png">
+                    <h1 style="display: inline;">Estudando</h1>
+                    <p style="display: block;">Sou desenvolvedor HTMl, CSS e PHP, e estou buscando aprender Js.</p>
+                </div>
+
+                <div class="skill">
+                    <img width="25px" src="https://cdn.discordapp.com/attachments/910598384719634466/1006545691138588692/check.png">
+                    <h1 style="display: inline;">Aceitando serviços</h1>
+                    <p style="display: block;">Estou aceitando serviços! desde sites simples como este a plugins de Pocketmine-MP</p>
+                </div>
+
+                <div class="skill">
+                    <img width="25px" src="https://cdn.discordapp.com/attachments/910598384719634466/1006549558072975400/book_.png">
+                    <h1 style="display: inline;">Cursando</h1>
+                    <p style="display: block;">Atualmente estou cursando Desenvolvimento Web</p>
+                </div>
+            </center>
+        </div>
+        <footer>
+            <center>
+                <p class="copy">Feito por LADINO</p>
+                <p class="copy">&copy; Ladino. Todos os direitos reservados</p>
+            </center>
+        </footer>
+        <script>
+            function senddiscord() {
+                alert("Meu discord é : LADINO#0063");
+            }
+        </script>
     </div>
-    <hr>
-    <h1 class="titles">DESTAQUES</h1>
-    <ul class="list">
-        <li>Sou analizador - sempre planejo como fazer antes de fazer.</li>
-        <li>Curioso - sempre busco aprender o que não sei para me aprimorar</li>
-        <li>Experiente - Sou experiente em Pocketmine-MP</li>
-    </ul>
-    <hr>
-    <h1 class="titles">PRINCIPAIS PROJETOS</h1>
-    <ul class="list">
-        <li>Fiz um servidor de sucesso conhecido como Orus Minigames</li>
-        <li>Fiz um plugin para loja Pay2Ply de ativação altomatica de vips</li>
-        <li>Agora realizo projetos privados.</li>
-    </ul>
-    <hr>
-    <h1 class="titles">LINGUAGENS</h1>
-    <p id="linguagens-txt">Já trabalhei com PHP (Pocketmine-MP), HTML, CSS, JS.</p>
-    <br>
-    <footer>
-        <p>Site portfolio LadinoXx<span class="bold"><br> &copy;</span> LadinoXx - 2022</p>
-    </footer>
-    <script>
-        function senddiscord() {
-            alert("Meu discord é : LADINO#0063");
-        }
-    </script>
 </body>
 </html>

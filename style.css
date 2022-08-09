@@ -1,110 +1,105 @@
 body {
-    background-color: rgb(39, 39, 39);
-    margin: 0;
+    background: white;
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 0px;
-    padding-right: 50px;
-    padding-left: 10px;
-    margin: 0px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
     display: flex;
 }
 
-.bartitle {
-    color: #fff;
-    font-size: 20px;
-    padding-top: 17px;
+#LLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
 }
 
-.bartitle::first-letter {
-    color: #1789e6;
-    margin: 3px;
-    font-weight: bold;
-}
-
-#logo {
-    border-radius: 50%;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.titles {
-    font-weight: bold;
-    color: #fff;
-    margin-top: 10px;
-    text-align: center;
-}
-
-#hi {
-    height: 20px;
-    width: 20px;
-    margin: 0px;
-    padding-left: 20px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-p {
-    color: white;
-    margin-left: 20px;
-    margin: 0px;
-}
-
-.sobremim {
-    display: flex;
-    margin: 0px;
-}
-
-#sobremim-txt {
-    margin-left: 0px;
-}
-
-hr {
-    margin: 20px;
-    padding: 0;
-    border: 0.5px solid #fff;
-}
-
-.list {
-    color: white;
-}
-
-.a-navbar {
+.link-header {
     text-decoration: none;
-    padding: 20px;
-    color: white;
+    color: rgb(0, 153, 192);
+    font-weight: 700;
+    margin: 20px 20px 10px 20px;
 }
 
-.a-navbar:hover {
-    color: rgba(255, 255, 255, 0.343);
+.link-header:hover {
+    color: rgb(0, 109, 136);
 }
 
-.a-navbar:active {
-    color: #1789e6;
-}
-
-
-#espaco {
+#separator-left {
     margin-left: auto;
 }
 
-footer {
-    background-color: black;
-    padding: 20px;
-    margin: 0;
-    margin-top: 100px;
-    text-align: center;
+#separator-rigth {
+    margin-right: auto;
 }
 
-#linguagens-txt {
-    padding-left: 20px;
+#principais-projetos {
+    font-size: 24px;
+    background: rgb(224, 224, 224) url("https://cdn.wallpapersafari.com/66/92/7rhYzT.jpg");
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+#principais-projetos {
+    margin: 5px;
+    font-size: 2em;
+    color: #FFF;
+}
+
+#h4-view-projects {
+    margin: 5px;
+    color: rgb(7, 92, 195);
+    margin-bottom: 50px;
+}
+
+.button-t1 {
+    font-size: 0.5em;
+    background: rgb(7, 92, 195);
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 20px 0px 20px;
+}
+
+.button-t1:hover {
+    background: rgba(7, 92, 195, 0.800);
+    border: 2px solid rgb(8, 72, 150, 0.800);
+    font-size: 0.6em;
+}
+
+.servers {
+    margin: 0px 70px 20px 70px;
+}
+
+.principais-servers {
+    color: gray;
+    font-weight: 700;
+}
+
+#sobremim {
+    background: rgb(217, 217, 217);
+    padding: 10px;
+}
+
+#skills {
+    padding: 20px;
+    background: rgb(221, 221, 221);
+}
+
+.skill {
+    display: inline-block;
+    width: 400px;
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.copy {
+    margin: 5px 0px;
+    color: rgb(120, 120, 120);
 }
