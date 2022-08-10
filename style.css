@@ -72,7 +72,16 @@ header {
 }
 
 .servers {
+    align-items: center;
+    display: inline;
     margin: 0px 70px 20px 70px;
+    background-color: rgb(221, 221, 221);
+}
+
+.servers-h3 {
+    display: block;
+    margin: 0px;
+    color: rgb(67, 67, 67);
 }
 
 .principais-servers {
@@ -100,5 +109,12 @@ header {
 
 .copy {
     margin: 5px 0px;
-    color: rgb(120, 120, 120);
+    color: rgb(47, 47, 47);
+    font-weight: 800;
+}
+
+footer {
+    padding: 10px;
+    margin-top: 50px;
+    background-color: rgb(221, 221, 221);
 }
