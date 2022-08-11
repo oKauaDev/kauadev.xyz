@@ -80,21 +80,23 @@ header {
     font-size: 1.3em;
 }
 
-.button-t1 {
+#principais-projetos a {
     font-size: 0.7em;
     background: rgb(7, 92, 195);
     text-decoration: none;
     color: white;
     padding: 10px;
     border-radius: 10px;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 10px 0px 10px;
+    margin-bottom: 20px;
 }
 
-.button-t1:hover {
+#principais-projetos a:hover {
     background: rgba(27, 110, 212, 0.8);
     border: 2px solid rgb(8, 72, 150, 0.800);
     font-size: 0.8em;
     text-decoration: underline;
+    margin-bottom: 20px;
 }
 
 #principais-servers {
