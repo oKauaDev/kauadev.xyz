@@ -8,6 +8,7 @@ header {
     background: rgb(255, 255, 255);
     padding: 10px;
     display: flex;
+    margin-bottom: 20px;
 }
 
 #LLogo {
@@ -18,7 +19,7 @@ header {
 
 .link-header {
     text-decoration: none;
-    color: rgb(0, 153, 192);
+    color: rgb(94, 94, 94);
     font-weight: 700;
     margin: 20px 20px 10px 20px;
 }
@@ -43,48 +44,78 @@ header {
     border-radius: 25px;
 }
 
-#principais-projetos {
-    margin: 5px;
-    font-size: 1.5em;
+#principais-projetos h1 {
+    font-size: 2.7em;
     color: #FFF;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
 }
 
-#h4-view-projects {
-    margin: 5px;
+#principais-projetos h4 {
+    padding: 10px;
+    margin: 10px;
+    font-size: 2em;
     color: rgb(7, 92, 195);
+}
+
+#principais-projetos p {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 0.7em;
     margin-bottom: 50px;
 }
 
+#principais-projetos p a {
+    padding: 0px;
+    margin: 0px;
+    color: rgb(62, 210, 255);
+    font-size: 0.7em;
+    margin-bottom: 50px;
+}
+
+#principais-projetos p a:hover {
+    color: rgb(62, 210, 255);
+    font-size: 1.3em;
+}
+
 .button-t1 {
-    font-size: 0.5em;
+    font-size: 0.7em;
     background: rgb(7, 92, 195);
     text-decoration: none;
     color: white;
     padding: 10px;
     border-radius: 10px;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px 50px 20px;
 }
 
 .button-t1:hover {
-    background: rgba(7, 92, 195, 0.800);
+    background: rgba(27, 110, 212, 0.8);
     border: 2px solid rgb(8, 72, 150, 0.800);
-    font-size: 0.6em;
+    font-size: 0.8em;
+    text-decoration: underline;
+}
+
+#principais-servers {
+    color: gray;
+    font-weight: 700;
 }
 
 .servers {
     align-items: center;
-    display: inline;
     margin: 0px 70px 20px 70px;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(237, 237, 237);
+    width: 200px;
+    border-radius: 25px;
 }
 
 .servers-h3 {
-    display: block;
     margin: 0px;
     color: rgb(67, 67, 67);
 }
 
-.principais-servers {
+.servers {
     color: gray;
     font-weight: 700;
 }
