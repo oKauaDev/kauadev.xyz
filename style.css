@@ -80,10 +80,9 @@ header {
     font-size: 1.3em;
 }
 
-#principais-projetos a {
+.a-p-1 {
     font-size: 0.7em;
     background: rgb(7, 92, 195);
-    text-decoration: none;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -91,11 +90,10 @@ header {
     margin-bottom: 20px;
 }
 
-#principais-projetos a:hover {
+.a-p-1:hover {
     background: rgba(27, 110, 212, 0.8);
     border: 2px solid rgb(8, 72, 150, 0.800);
     font-size: 0.8em;
-    text-decoration: underline;
     margin-bottom: 20px;
 }
 
