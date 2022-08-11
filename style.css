@@ -45,7 +45,7 @@ header {
 }
 
 #principais-projetos h1 {
-    font-size: 2.7em;
+    font-size: 2em;
     color: #FFF;
     padding: 0px;
     margin: 0px;
@@ -87,7 +87,7 @@ header {
     color: white;
     padding: 10px;
     border-radius: 10px;
-    margin: 0px 20px 50px 20px;
+    margin: 0px 20px 0px 20px;
 }
 
 .button-t1:hover {
