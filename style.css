@@ -17,24 +17,25 @@ header {
     border-radius: 100%;
 }
 
-.link-header {
-    text-decoration: none;
-    color: rgb(94, 94, 94);
-    font-weight: 700;
-    line-height: 70px;
+ul {
+    float: left;
+    list-style: none;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
     margin: 0px 20px;
+    text-decoration: none;
+    line-height: 40px;
+    color: rgb(97, 97, 97);
+    font-weight: bold;
 }
 
-.link-header:hover {
-    color: rgb(0, 109, 136);
-}
-
-#separator-left {
-    margin-left: auto;
-}
-
-#separator-rigth {
-    margin-right: auto;
+ul li a:hover {
+    color: rgb(17, 100, 158)
 }
 
 #principais-projetos {
