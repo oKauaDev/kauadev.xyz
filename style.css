@@ -109,6 +109,7 @@ header {
     background-color: rgb(237, 237, 237);
     width: 200px;
     border-radius: 25px;
+    padding: 20px;
 }
 
 .servers-h3 {
