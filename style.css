@@ -7,14 +7,20 @@ body {
 header {
     background: rgb(255, 255, 255);
     padding: 10px;
-    display: flex;
     margin-bottom: 20px;
 }
 
-#LLogo {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
+.clear {
+    clear: both;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+header nav {
+    width: 300px;
+    margin: 0 auto;
 }
 
 ul {
@@ -27,7 +33,6 @@ ul li {
 }
 
 ul li a {
-    margin: 0px 20px;
     text-decoration: none;
     line-height: 40px;
     color: rgb(97, 97, 97);
@@ -143,7 +148,7 @@ ul li a:hover {
 
 .copy {
     margin: 5px 0px;
-    color: rgb(47, 47, 47);
+    color: rgb(23, 23, 23);
     font-weight: 800;
 }
 
