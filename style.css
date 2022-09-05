@@ -24,12 +24,12 @@ header nav {
 }
 
 ul {
-    float: left;
+    display: flex;
     list-style: none;
 }
 
 ul li {
-    float: left;
+    display: flex;
 }
 
 ul li a {
