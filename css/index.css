@@ -108,10 +108,12 @@ footer img {
 
     #conteudo .skills {
         margin: 0 auto;
+        width: 70%;
     }
 
     #conteudo .skills h1 {
         word-break: break-all;
+        font-size: 1.2rem;
     }
 
     #logo {
