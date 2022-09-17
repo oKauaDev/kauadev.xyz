@@ -1,0 +1,105 @@
+nav {
+    background: rgb(33, 33, 33);
+    height: 60px;
+    width: 100%;
+}
+
+nav #navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin: 0 auto;
+}
+
+nav #navbar li {
+    margin-top: 30px;
+}
+
+nav #navbar a {
+    transition: 0.5s;
+    font-weight: bolder;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+nav #navbar a:hover {
+    color: rgb(0, 110, 165);
+}
+
+#menu-check,
+#menu-mobile {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    #menu-mobile{
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        border-top: 2px solid white;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+
+    #menu-mobile::before {
+        content: " ";
+        display: block;
+        width: 15px;
+        height: 2px;
+        background: white;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        transition: 0.5s;
+    }
+
+    #menu-mobile::after {
+        content: " ";
+        display: block;
+        width: 10px;
+        height: 2px;
+        background: white;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        transition: 0.5s;
+    }
+
+    nav #navbar {
+        transition: 0.5s;
+        visibility: hidden;
+        width: 0;
+        margin: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        text-align: center;
+        top: 50px;
+        background: rgb(33, 33, 33);
+        height: 0;
+        overflow-y: hidden;
+        z-index: 10;
+    }
+
+    #menu-check:checked~#navbar {
+        visibility: visible;
+        height: calc(100vh - 50px);
+    }
+
+    #menu-check:checked~#menu-mobile {
+        border-top: none;
+    }
+    #menu-check:checked~#menu-mobile::before {
+        width: 20px;
+        transform: rotate(-130deg);
+    }
+    #menu-check:checked~#menu-mobile::after {
+        width: 20px;
+        transform: rotate(130deg);
+        position: relative;
+        top: -7px;
+    }
+
+}

@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#conteudo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    background: url(https://cdn.discordapp.com/avatars/668849866805477398/308feffc1bbe9c6bb1583087304b0834.webp?size=2048) no-repeat top center;
+    background-size: 200px;
+    background-position: 50% -60px;
+}
+
+#logo {
+    display: none;
+}
+
+#conteudo .skills {
+    width: 35%;
+    text-align: center;
+    margin: 0 2%;
+    padding: 20px;
+}
+
+#conteudo .skills h1 {
+    margin-bottom: 15px;
+}
+
+#conteudo .skills p {
+    word-break: keep-all;
+}
+
+#developer {
+    display: flex;
+    background: rgb(40, 43, 46);
+    margin-top: 100px;
+}
+
+#developer #img {
+    width: 55%;
+}
+
+#developer #img img {
+    width: 100%;
+}
+
+#developer #sobre {
+    width: 45%;
+    padding-left: 20px;
+}
+
+#sobre div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+#developer h3 {
+    color: rgb(0, 110, 165);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+#developer h4 {
+    color: white;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+#developer p {
+    width: 80%;
+    color: rgb(152, 152, 152);
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    font-weight: 900;
+    color: rgb(74, 81, 88);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 30px;
+    margin: 10px;
+}
+
+@media (max-width: 900px) {
+    /*conteudo*/
+    #conteudo {
+        display: block;
+        margin-top: 100px;
+        margin-top: 0;
+        background: none;
+    }
+
+    #conteudo .skills {
+        margin: 0 auto;
+    }
+
+    #conteudo .skills h1 {
+        word-break: break-all;
+    }
+
+    #logo {
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    /*sobre*/
+    #developer {
+        display: block;
+        background: rgb(40, 43, 46);
+        margin-top: 100px;
+    }
+
+    #developer #img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #developer #img img {
+        width: 90%;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+    
+    #developer #sobre {
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    #sobre div {
+        position: unset;
+        margin-top: 120px;
+    }
+    
+    #developer h3 {
+        text-align: center;
+        color: rgb(0, 110, 165);
+        font-weight: 900;
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    #developer h4 {
+        color: white;
+        font-size: 3rem;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #developer p {
+        color: rgb(152, 152, 152);
+        margin-top: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+}

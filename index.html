@@ -1,95 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio - Ladino</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>Portifolio Ladino</title>
 </head>
-
 <body>
     <div id="container">
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://discordapp.com/users/668849866805477398">Discord</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/LadinoXx" style="margin-left: 20px;">Github</a>
-                    </li>
-                    <li>
-                        <a href="https://poggit.pmmp.io/plugins/by/LadinoXx" style="margin-left: 20px;">Poggit</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="clear"></div>
-        </header>
-        <div id="principais-projetos">
-            <center>
-                <h1>Meus principais repositorios</h1>
-                <h4>Veja os meus principais projetos</h4>
-                <p>Aqui estão alguns plugins de pocketmine que fiz para meu portifolio e também para enviar ao <a
-                        href="https://poggit.pmmp.io">poggit</a>.</p>
-                <a class="a-p-1" href="https://github.com/LadinoXx/PlayScript">PlayScript</a>
-                <a class="a-p-1" href="https://poggit.pmmp.io/p/InfinitSlots">InfinitSlots</a>
-            </center>
+        <nav>
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" id="menu-mobile"></label>
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="https://github.com/LadinoXx">Github</a></li>
+                <li><a href="https://discordapp.com/users/668849866805477398">Discord</a></li>
+                <li><a href="">Plugins</a></li>
+            </ul>
+        </nav>
+        <div id="conteudo">
+            <img src="https://cdn.discordapp.com/avatars/668849866805477398/308feffc1bbe9c6bb1583087304b0834.webp?size=2048" id="logo">
+            <div class="skills">
+                <h1>&lt;Desenvolvedor PMMP&gt;</h1>
+                <p>Sou desenvolvedor Pocketmine-MP (PHP), uma api de minecraft bedrock edition.</p>
+            </div>
+            <div class="skills">
+                <h1>&lt;Desenvolvedor Web&gt;</h1>
+                <p>Sou desenvolvedor web (HTML, CSS, PHP, JS, MYSQl etc...), ainda estou aprimorando meus conhecimentos nesta área</p>
+            </div>
         </div>
-        <div>
-            <center>
-                <p id="principais-servers">VEJA ALGUNS DOS PRINCIPAIS SERVIDORES QUE JÀ TRABALHEI.</p>
-                <div class="servers">
-                    <img width="100px"
-                        src="https://cdn.discordapp.com/icons/869308624122552320/a_2800f8c1e66ecee307f3251161ef33c1.gif?size=2048">
-                    <h3 class="servers-h3">Rede Alone</h3>
+        <div id="developer">
+            <div id="img">
+                <img src="imagens/wallpaper-minecraft-alex-steve-universe.jpeg">
+            </div>
+            <div id="sobre">
+                <div>
+                    <h3>UM POUCO SOBRE</h3>
+                    <h4 id="about">LadinoXx</h4>
+                    <p>Sou um entusiasta em programação e apaixonado em minecraft, tenho 16 anos e atualmente busco aprimorar meus conhecimentos em desenvolvimento web para me aprofundar.</p>
                 </div>
-                <div class="servers">
-                    <img width="100px"
-                        src="https://cdn.discordapp.com/attachments/910598384719634466/1006537577945370634/pack_icon.png">
-                    <h3 class="servers-h3">WayMC</h3>
-                </div>
-                <div class="servers">
-                    <img width="100px"
-                        src="https://cdn.discordapp.com/attachments/910598384719634466/1006537702172282880/1629978336436.png">
-                    <h3 class="servers-h3">Orus Minigames</h3>
-                </div>
+            </div>
         </div>
-        </center>
-        <div id="skills">
-            <center>
-                <div class="skill">
-                    <img width="25px"
-                        src="https://cdn.discordapp.com/attachments/910598384719634466/1006540292402454548/dev.png">
-                    <h1 style="display: inline;">Estudando</h1>
-                    <p style="display: block;">Sou desenvolvedor HTMl, CSS e PHP, e estou buscando aprender Js.</p>
-                </div>
-
-                <div class="skill">
-                    <img width="25px"
-                        src="https://cdn.discordapp.com/attachments/910598384719634466/1006545691138588692/check.png">
-                    <h1 style="display: inline;">Aceitando serviços</h1>
-                    <p style="display: block;">Estou aceitando serviços! desde sites simples como este a plugins de
-                        Pocketmine-MP</p>
-                </div>
-
-                <div class="skill">
-                    <img width="25px"
-                        src="https://cdn.discordapp.com/attachments/910598384719634466/1006549558072975400/book_.png">
-                    <h1 style="display: inline;">Cursando</h1>
-                    <p style="display: block;">Atualmente estou cursando Desenvolvimento Web</p>
-                </div>
-            </center>
-        </div>
-        <footer>
-            <center>
-                <p class="copy">Feito por LADINO</p>
-                <p class="copy">&copy; Ladino. Todos os direitos reservados</p>
-            </center>
-        </footer>
-
     </div>
+    <footer>
+        <p>Copyright  &copy; 2022 LadinoXx. Todos os direitos reservados.</p>
+        <div>
+            <a href="https://github.com/LadinoXx"><img src="imagens/25231.png"></a>
+            <a href="https://discordapp.com/users/668849866805477398"><img src="imagens/discord-icon.svg"></a>
+        </div>
+    </footer>
 </body>
-
 </html>
