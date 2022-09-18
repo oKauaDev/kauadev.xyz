@@ -98,6 +98,10 @@ footer img {
         background-position-y: -150px;
     }
 
+    #contents {
+        height: 75vh;
+    }
+
     #contents #contents-projetos {
         height: 75vh;
     }
