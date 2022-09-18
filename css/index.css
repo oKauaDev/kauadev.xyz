@@ -95,7 +95,11 @@ footer img {
 @media (max-width: 650px) {
 
     #conteudo {
-        background-position-y: -200px;
+        background-position-y: -150px;
+    }
+
+    #contents #contents-projetos {
+        height: 75vh;
     }
 
     .centralize {
