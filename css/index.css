@@ -9,78 +9,72 @@ html {
 
 body {
     font-family: sans-serif;
+    background: rgb(21, 21, 22) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087934121787454/1663512411383.png) no-repeat;
+    background-position-y: 100vh;
+    background-position-x: 20%;
+    background-size: 80px;
+    color: white;
 }
 
 #conteudo {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-    background: url(https://cdn.discordapp.com/avatars/668849866805477398/308feffc1bbe9c6bb1583087304b0834.webp?size=2048) no-repeat top center;
-    background-size: 200px;
-    background-position: 50% -60px;
-}
-
-#logo {
-    display: none;
-}
-
-#conteudo .skills {
-    width: 35%;
-    text-align: center;
-    margin: 0 2%;
-    padding: 20px;
-}
-
-#conteudo .skills h1 {
-    margin-bottom: 15px;
-}
-
-#conteudo .skills p {
-    word-break: keep-all;
-}
-
-#developer {
-    display: flex;
-    background: rgb(40, 43, 46);
-    margin-top: 100px;
-}
-
-#developer #img {
-    width: 55%;
-}
-
-#developer #img img {
+    margin-top: 60px;
     width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    background: rgb(21, 21, 22) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087933865918524/1663512423473.png) repeat-y;
+    background-size: 81.5px;
+    background-position-x: 20%;
 }
 
-#developer #sobre {
-    width: 45%;
-    padding-left: 20px;
+#conteudo div {
+    width: 100vh;
 }
 
-#sobre div {
+.centralize {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%); 
+    left: 25%;
+    top: 40%;
+    width: 40%;
 }
 
-#developer h3 {
+h1,
+h5,
+p {
+    margin: 1rem 0;
+    animation: aparicao 4s ease both alternate;
+}
+
+@keyframes aparicao {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1.duble-width {
+    font-size: 4rem;
+}
+
+h5.duble-width {
+    font-size: 1rem;
+}
+
+.list-margin {
+    margin: 0.1rem 0;
+}
+
+.cian-color {
     color: rgb(0, 110, 165);
-    font-weight: 900;
-    font-size: 2rem;
 }
 
-#developer h4 {
-    color: white;
-    font-size: 3rem;
-    margin-top: 10px;
+#contents {
+    height: 100vh;
 }
 
-#developer p {
-    width: 80%;
-    color: rgb(152, 152, 152);
-    margin-top: 10px;
-    font-size: 1.2rem;
+#contents #contents-projetos {
+    height: 100vh;
 }
 
 footer {
@@ -88,6 +82,7 @@ footer {
     padding: 20px;
     font-weight: 900;
     color: rgb(74, 81, 88);
+    background: rgb(21, 21, 22);
     display: flex;
     justify-content: space-between;
 }
@@ -97,85 +92,39 @@ footer img {
     margin: 10px;
 }
 
-@media (max-width: 900px) {
-    /*conteudo*/
+@media (max-width: 650px) {
+
     #conteudo {
-        display: block;
-        margin-top: 100px;
-        margin-top: 0;
-        background: none;
+        background-position-y: -200px;
     }
 
-    #conteudo .skills {
-        margin: 0 auto;
-        width: 70%;
+    .centralize {
+        position: relative;
+        left: 30%;
+        top: 30%;
+        width: 80%;
+        max-width: 200px;
     }
 
-    #conteudo .skills h1 {
-        word-break: break-all;
-        font-size: 1.2rem;
+    h1,
+    h5,
+    p {
+        margin: 0.5rem 0;
     }
 
-    #logo {
-        display: block;
-        width: 150px;
-        margin: 0 auto;
-    }
-
-    /*sobre*/
-    #developer {
-        display: block;
-        background: rgb(40, 43, 46);
-        margin-top: 100px;
-    }
-
-    #developer #img {
-        width: 100%;
-        text-align: center;
-    }
-    
-    #developer #img img {
-        width: 90%;
-        margin: 10px 0;
-        border-radius: 10px;
-    }
-    
-    #developer #sobre {
-        width: 100%;
-        padding-left: 0;
-    }
-    
-    #sobre div {
-        position: unset;
-        margin-top: 120px;
-    }
-    
-    #developer h3 {
-        text-align: center;
-        color: rgb(0, 110, 165);
-        font-weight: 900;
-        font-size: 2rem;
-        width: 100%;
-    }
-    
-    #developer h4 {
-        color: white;
+    h1.duble-width {
         font-size: 3rem;
-        margin-top: 10px;
-        text-align: center;
-        width: 100%;
     }
-    
-    #developer p {
-        color: rgb(152, 152, 152);
-        margin-top: 10px;
-        font-size: 1.2rem;
-        text-align: center;
-        width: 100%;
+
+    h5.duble-width {
+        font-size: 1rem;
     }
 
     footer {
         display: block;
         text-align: center;
+        position: relative;
+        bottom: 0;
+        margin: 0;
     }
 }
