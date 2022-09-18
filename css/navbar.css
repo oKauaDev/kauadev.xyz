@@ -8,6 +8,7 @@ nav {
     top: 0px;
     z-index: 100;
     justify-content: right;
+    background: rgb(21, 21, 22);
 }
 
 #logoname {
@@ -37,6 +38,15 @@ nav #navbar a {
 
 nav #navbar a:hover {
     color: rgb(0, 110, 165);
+}
+
+nav #navba span {
+    transition: 0.5s;
+    color: rgb(0, 110, 165);
+}
+
+nav #navbar a:hover>span {
+    color: white;
 }
 
 #menu-check,

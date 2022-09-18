@@ -8,9 +8,9 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: serif;
     background: rgb(21, 21, 22) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087934121787454/1663512411383.png) no-repeat;
-    background-position-y: 100vh;
+    background-position-y: 80vh;
     background-position-x: 20%;
     background-size: 80px;
     color: white;
@@ -20,8 +20,7 @@ body {
     margin-top: 60px;
     width: 100%;
     height: 100vh;
-    overflow-y: hidden;
-    background: rgb(21, 21, 22) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087933865918524/1663512423473.png) repeat-y;
+    background: url(https://cdn.discordapp.com/attachments/910598384719634466/1021087933865918524/1663512423473.png) repeat-y;
     background-size: 81.5px;
     background-position-x: 20%;
 }
@@ -73,11 +72,30 @@ h5.duble-width {
     height: 100vh;
 }
 
-#contents #contents-projetos {
+#contents #contents-projetos,
+#contents #contents-plugins,
+#contents #contents-sites {
     height: 100vh;
+    background: rgb(21, 21, 22) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087934121787454/1663512411383.png) repeat-y;
+    background-position-x: 20%;
+    background-size: 80px;
+    margin-top: -20px;
+}
+
+.a-plugins {
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.a-plugins:hover {
+    color: rgb(0, 110, 165);
 }
 
 footer {
+    font-family: sans-serif;
     margin-top: 50px;
     padding: 20px;
     font-weight: 900;
@@ -98,12 +116,8 @@ footer img {
         background-position-y: -150px;
     }
 
-    #contents {
-        height: 75vh;
-    }
-
-    #contents #contents-projetos {
-        height: 75vh;
+    #conteudo {
+        height: 100vh;
     }
 
     .centralize {
