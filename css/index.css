@@ -1,3 +1,8 @@
+:root {
+    --black: rgb(21, 21, 22);
+    --cian: rgb(0, 110, 165);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +14,7 @@ html {
 
 body {
     font-family: serif;
-    background: rgb(21, 21, 22) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087934121787454/1663512411383.png) no-repeat;
+    background: var(--black) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087934121787454/1663512411383.png) no-repeat;
     background-position-y: 80vh;
     background-position-x: 20%;
     background-size: 80px;
@@ -65,7 +70,7 @@ h5.duble-width {
 }
 
 .cian-color {
-    color: rgb(0, 110, 165);
+    color: var(--cian);
 }
 
 #contents {
@@ -76,10 +81,29 @@ h5.duble-width {
 #contents #contents-plugins,
 #contents #contents-sites {
     height: 100vh;
-    background: rgb(21, 21, 22) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087934121787454/1663512411383.png) repeat-y;
+    background: var(--black) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087934121787454/1663512411383.png) repeat-y;
     background-position-x: 20%;
     background-size: 80px;
     margin-top: -20px;
+}
+
+@keyframes robin {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 100%;
+        transform: rotate(360deg);
+    }
+}
+
+#contents-plugins img {
+    position: relative;
+    left: 0;
+    top: 45%;
+    width: 10%;
+    animation: robin 4s linear 0s infinite;
+    z-index: 1;
 }
 
 .a-plugins {
@@ -91,7 +115,7 @@ h5.duble-width {
 }
 
 .a-plugins:hover {
-    color: rgb(0, 110, 165);
+    color: var(--cian);
 }
 
 footer {
@@ -148,5 +172,14 @@ footer img {
         position: relative;
         bottom: 0;
         margin: 0;
+    }
+
+    #contents-plugins img {
+        position: absolute;
+        left: 0;
+        top: 150%;
+        width: 25%;
+        animation: robin 5s linear 2s infinite;
+        z-index: 1;
     }
 }
