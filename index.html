@@ -1,65 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-    <title>Portifolio Ladino</title>
+    <title>Portifolio LadinoXx</title>
 </head>
 <body>
-    <div id="container">
-        <nav>
-            <input type="checkbox" id="menu-check">
-            <label for="menu-check" id="menu-mobile"></label>
+    <header>
+        <img src="imgs/logo.png">
+        <div>
+            <label for="" id="menu-mobile"></label>
             <ul id="navbar">
-                <li><a href="#">Home<span class="cian-color">.xyz</span></a></li>
-                <li><a href="#sobre">Sobre<span class="cian-color">.xyz</span></a></li>
-                <li><a href="https://github.com/LadinoXx">Github<span class="cian-color">.xyz</span></a></li>
-                <li><a href="https://discordapp.com/users/668849866805477398">Discord<span class="cian-color">.xyz</span></a></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Trabalhos</a></li>
+                <li><a href="">Contato</a></li>
             </ul>
-        </nav>
-    <div id="conteudo">
-        <h1 class="centralize duble-width">ladino<span class="cian-color">.xyz</span></h1>
-        <h5 class="centralize duble-width">Developer PHP & Web Desingner</h5>
-        <p class="centralize duble-width">Desenvolovedor 60% front-end e 40% back-end</p>
-    </div>
-    <div id="contents">
-        <div id="contents-sobre">
-            <h1 class="centralize duble-width">Sobre mim</h1>
-            <p class="centralize duble-width">Sou desenvolvedor a dois anos (trabalhando com PHP), no início de 2022 comecei a me interresar pelo desenvolvimento web, e comecei a estuda-lo, e até o presente momento busco me aprofundar mais nele aprendendo JS e CSS.</p>
         </div>
-        <div id="contents-projetos">
-            <h1 class="centralize duble-width">Meus Projetos</h1>
-            <p class="centralize duble-width">Veja abaixo alguns dos principais projetos em que já trabalhei, Como dono ou como Desenvolvedor:</p>
-            <p class="centralize duble-width list-margin">Orus Minigames</p>
-            <p class="centralize duble-width list-margin">WayMC</p>
-            <p class="centralize duble-width list-margin">Rede Alone (RankUP)</p>
+    </header>
+    <div id="container">
+        <div id="top">
+            <h1 id="top-title" animation="top">Desenvolvedor Front-End e intusiasta na programação, criado <span class="custom-cian-color">produtos digitais</span> pra você e seu projeto.</h1>
+            <p id="subtitle-top" class="duble-font-style">Desenvolvedor web com as linguagens: HTML, CSS, PHP, JS e estudando mais a cada dia.</p>
+            <a id="github-top-button" class="duble-font-style" href="">Github</a>
         </div>
-        <div id="contents-plugins">
-            <img src="gifs/ezgif.com-gif-maker.gif">
-            <h1 class="centralize duble-width">Plugins (PM4)</h1>
-            <p class="centralize duble-width">Tenho alguns plugins liberados em PM4, veja alguns em meu github, alguns até mesmo já foram aprovados pelo poggit.</p>
-            <a class="centralize duble-width a-plugins" href="https://github.com/LadinoXx/PlayScript">PlayScript</a>
-            <a class="centralize duble-width a-plugins" href="https://github.com/LadinoXx/EnableEncryptedPlugin">EnableEncryptedPlugin</a>
-            <a class="centralize duble-width a-plugins" href="https://github.com/LadinoXx/InfinitSlots">InfinitSlots</a>
-        </div>
-        <div id="contents-sites">
-            <h1 class="centralize duble-width">Sites</h1>
-            <p class="centralize duble-width">Veja alguns exemplos de sites que fiz como forma de portifólio.</p>
-            <a class="centralize duble-width a-plugins" href="index.html">Ladino Portifolio</a>
-            <a class="centralize duble-width a-plugins" href="https://github.com/LadinoXx/PMMP-Community">PMMP-Community</a>
-            <a class="centralize duble-width a-plugins" href="https://github.com/LadinoXx/Bedrock-community">Bedrock-community</a>
-        </div>
-        <footer>
-            <p>Copyright  &copy; 2022 LadinoXx. Todos os direitos reservados.</p>
+        <div id="quemsou">
             <div>
-                <a href="https://github.com/LadinoXx"><img src="imagens/github_white.png.opdownload"></a>
-                <a href="https://discordapp.com/users/668849866805477398"><img src="imagens/discord-icon.svg"></a>
+                <img id="personagem" src="imgs/ladino.svg">
             </div>
-        </footer>
+            <div>
+                <h1>Sobre mim</h1>
+                <p id="sobremim-text">Sou Desenvolvedor a mais de 2 anos, era focado em PHP desenvolvendo plugins para Minecraft com a API Pocketmine-MP, atualmente estou aprendendo mais sobre o mundo web.</p>
+            </div>
+        </div>
+        <h1 id="esperienciat">Minha esperiencia</h1>
+        <div id="esperiencia">
+            <div id="projetos">
+                <ul>
+                    <li>
+                        <a  project-id="p-1" class="selectedProject">PlayScript</a>
+                    </li>
+                    <li>
+                        <a project-id="p-2">EnableEncryptedPlugin</a>
+                    </li>
+                    <li>
+                        <a project-id="p-3">Bedrock-community</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="projeto-detalhe">
+                <h1 id="title-projeto">Nome do projeto...</h1>
+                <p id="description-projeto">Descrição do projeto...</p>
+            </div>
+        </div>
     </div>
+    <footer>
+
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 :root {
-    --black: rgb(21, 21, 22);
-    --cian: rgb(0, 110, 165);
+    --cinza: rgb(26, 26, 26);
+    --blue-cian: rgb(0, 116, 175);
 }
 
 * {
@@ -13,173 +13,250 @@ html {
 }
 
 body {
-    font-family: serif;
-    background: var(--black) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087934121787454/1663512411383.png) no-repeat;
-    background-position-y: 80vh;
-    background-position-x: 20%;
-    background-size: 80px;
+    background: var(--cinza);
+    font-family: sans-serif;
+}
+
+.custom-cian-color {
+    color: var(--blue-cian);
+}
+
+.duble-font-style {
+    font-size: 1.5rem;
+}
+
+#container #top #top-title {
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 3%;
     color: white;
 }
 
-#conteudo {
-    margin-top: 60px;
-    width: 100%;
-    height: 100vh;
-    background: url(https://cdn.discordapp.com/attachments/910598384719634466/1021087933865918524/1663512423473.png) repeat-y;
-    background-size: 81.5px;
-    background-position-x: 20%;
+#container #top #subtitle-top {
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 50px;
+    color: white;
 }
 
-#conteudo div {
-    width: 100vh;
-}
+@keyframes DigitalCursor {
+    0% {
+        opacity: 1;
+    }
 
-.centralize {
-    position: relative;
-    left: 25%;
-    top: 40%;
-    width: 40%;
-}
-
-h1,
-h5,
-p {
-    margin: 1rem 0;
-    animation: aparicao 4s ease both alternate;
-}
-
-@keyframes aparicao {
-    from {
+    50% {
         opacity: 0;
     }
-    to {
+
+    100% {
         opacity: 1;
     }
 }
 
-h1.duble-width {
-    font-size: 4rem;
+#subtitle-top::after {
+    content: "|";
+    margin-left: 5px;
+    animation: DigitalCursor 0.5s infinite;
+    color: var(--blue-cian);
 }
 
-h5.duble-width {
-    font-size: 1rem;
-}
-
-.list-margin {
-    margin: 0.1rem 0;
-}
-
-.cian-color {
-    color: var(--cian);
-}
-
-#contents {
-    height: 100vh;
-}
-
-#contents #contents-projetos,
-#contents #contents-plugins,
-#contents #contents-sites {
-    height: 100vh;
-    background: var(--black) url(https://cdn.discordapp.com/attachments/910598384719634466/1021087934121787454/1663512411383.png) repeat-y;
-    background-position-x: 20%;
-    background-size: 80px;
-    margin-top: -20px;
-}
-
-@keyframes robin {
-    from {
-        left: -200px;
-    }
-    to {
-        left: 100%;
-        transform: rotate(360deg);
-    }
-}
-
-#contents-plugins img {
-    position: relative;
-    left: 0;
-    top: 45%;
-    width: 10%;
-    animation: robin 4s linear 0s infinite;
-    z-index: 1;
-}
-
-.a-plugins {
+#container #top #github-top-button {
+    background: var(--blue-cian);
+    padding: 20px 50px;
     display: block;
-    margin: 5px 0;
+    width: 100px;
+    text-align: center;
     color: white;
     text-decoration: none;
+    margin-left: 5%;
+    margin-top: 50px;
     transition: 0.5s;
 }
 
-.a-plugins:hover {
-    color: var(--cian);
+#container #top #github-top-button:hover {
+    width: 110px;
+    border: 4px solid white;
 }
 
-footer {
-    font-family: sans-serif;
-    margin-top: 50px;
+#container #quemsou {
+    background: black;
+    margin: 5% 0;
+    color: white;
     padding: 20px;
-    font-weight: 900;
-    color: rgb(74, 81, 88);
-    background: rgb(21, 21, 22);
     display: flex;
+    padding: 10%;
     justify-content: space-between;
+    align-items: center;
 }
 
-footer img {
-    width: 30px;
-    margin: 10px;
+#container #quemsou #personagem {
+    width: 100%;
+    margin-left: 10%;
+    transition: 1s;
+}
+
+#container #quemsou #personagem:hover {
+    width: 105%;
+}
+
+#container #quemsou h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-left: 20%;
+}
+
+#container #quemsou #sobremim-text {
+    font-size: 1.5rem;
+    width: 80%;
+    color: rgb(200, 200, 200);
+    margin-left: 20%;
+}
+
+#esperienciat {
+    color: white;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+#esperienciat::after {
+    content: " .";
+    color: var(--blue-cian);
+}
+
+#container #esperiencia {
+    display: flex;
+}
+
+#container #esperiencia #projetos {
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+#container #esperiencia #projetos ul {
+    list-style: none;
+}
+
+#container #esperiencia #projetos ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 80px 20px 10px;
+    display: block;
+    background: rgb(16, 16, 16);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#container #esperiencia #projetos ul li a.selectedProject {
+    border-left: 3px solid var(--blue-cian);
+}
+
+#container #esperiencia #projeto-detalhe {
+    height: 173px;
+    margin-left: 5%;
+    color: white;
+    padding: 0 50px;
+}
+
+#container #esperiencia #projeto-detalhe #title-projeto {
+    margin-bottom: 10px;
+    font-weight: 2.5rem;
+    word-break: break-all;
+}
+
+
+#container #esperiencia #projeto-detalhe #description-projeto {
+    color: rgb(204, 204, 204);
+    width: 60%;
+}
+
+@media (max-width: 800px) {
+    #container #quemsou {
+        text-align: center;
+    }
+
+    #container #quemsou #personagem {
+        display: none;
+    }
+    
+    #container #quemsou h1 {
+        font-size: 3rem;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    #container #quemsou #sobremim-text {
+        font-size: 1.5rem;
+        width: 100%;
+        margin: 0;
+        color: rgb(200, 200, 200);
+        word-break: break-all;
+    }
+
+    #esperienciat {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    #esperienciat::after {
+        content: ".";
+        color: var(--blue-cian);
+    }
+
+    #container #esperiencia {
+        display: block;
+        text-align: center;
+    }
+
+    #container #esperiencia #projetos {
+        margin: 0 auto 5% auto;
+        display: inline-block;
+    }
+
+    #container #esperiencia #projetos ul li a {
+        width: 200px;
+        align-items: center;
+        border-left: 3px solid var(--cinza);
+        padding: 20px 80px;
+    }
+
+    #container #esperiencia #projeto-detalhe {
+        height: auto;
+        margin: 0;
+        color: white;
+        padding: 0 50px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    #container #esperiencia #projeto-detalhe #title-projeto {
+        margin-bottom: 10px;
+        font-weight: 2.5rem;
+        word-break: break-all;
+    }
+    
+    #container #esperiencia #projeto-detalhe #description-projeto {
+        color: rgb(204, 204, 204);
+        width: auto;
+        margin: 0 5%;
+    }
 }
 
 @media (max-width: 650px) {
-
-    #conteudo {
-        background-position-y: -150px;
-    }
-
-    #conteudo {
-        height: 100vh;
-    }
-
-    .centralize {
-        position: relative;
-        left: 30%;
-        top: 30%;
-        width: 80%;
-        max-width: 200px;
-    }
-
-    h1,
-    h5,
-    p {
-        margin: 0.5rem 0;
-    }
-
-    h1.duble-width {
-        font-size: 3rem;
-    }
-
-    h5.duble-width {
-        font-size: 1rem;
-    }
-
-    footer {
-        display: block;
+    #container #top {
         text-align: center;
-        position: relative;
-        bottom: 0;
-        margin: 0;
     }
 
-    #contents-plugins img {
-        position: absolute;
-        left: 0;
-        top: 150%;
-        width: 25%;
-        animation: robin 5s linear 2s infinite;
-        z-index: 1;
+    #container #top #top-title {
+        width: 80%;
+    }
+    
+    #container #top #subtitle-top {
+        width: 80%;
+    }
+
+    #container #top #github-top-button {
+        margin: 0 auto;
+        margin-top: 50px;
     }
 }

@@ -1,125 +1,114 @@
-nav {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    position: fixed;
-    top: 0px;
-    z-index: 100;
-    justify-content: right;
-    background: rgb(21, 21, 22);
+:root {
+    --cinza: rgb(26, 26, 26);
+    --blue-cian: rgb(0, 116, 175);
 }
 
-#logoname {
-    color: white;
-    margin-left: 20px;
-}
-
-nav #navbar {
+header {
     display: flex;
+    background: var(--cinza);
+    box-shadow: 5px 0 10px black;
     justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+header img {
+    width: 128px;
+    height: 34px;
+    padding-left: 2%;
+}
+
+header ul#navbar {
+    display: flex;
     list-style: none;
-    width: 400px;
+    text-align: center;
+    padding-right: 2%;
 }
 
-nav #navbar li {
-    margin: 20px 0;
-}
-
-nav #navbar a {
-    transition: 0.5s;
-    font-weight: bolder;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-}
-
-nav #navbar a:hover {
-    color: rgb(0, 110, 165);
-}
-
-nav #navba span {
-    transition: 0.5s;
-    color: rgb(0, 110, 165);
-}
-
-nav #navbar a:hover>span {
-    color: white;
-}
-
-#menu-check,
-#menu-mobile {
+header label {
     display: none;
 }
 
-@media (max-width: 650px) {
-    #menu-mobile{
+header ul#navbar li {
+    padding: 5px 20px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+header ul#navbar li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header ul#navbar li a:hover {
+    color: var(--blue-cian);
+    font-size: 21px;
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 600px) {
+    header label {
         display: block;
         cursor: pointer;
         width: 20px;
         border-top: 2px solid white;
-        position: absolute;
-        top: 20px;
-        left: 10px;
+        margin-right: 10px;
     }
 
-    #menu-mobile::before {
+    header label::before {
         content: " ";
         display: block;
-        width: 15px;
-        height: 2px;
-        background: white;
-        margin-top: 5px;
-        margin-bottom: 2px;
-        transition: 0.5s;
-    }
-
-    #menu-mobile::after {
-        content: " ";
-        display: block;
-        width: 10px;
-        height: 2px;
-        background: white;
-        margin-top: 5px;
-        margin-bottom: 2px;
-        transition: 0.5s;
-    }
-
-    nav #navbar {
-        transition: 0.5s;
-        visibility: hidden;
-        width: 0;
-        margin: 0;
-        position: absolute;
-        display: block;
-        width: 100%;
-        text-align: center;
-        top: 50px;
-        background: rgb(21, 21, 22);
-        height: 0;
-        overflow-y: hidden;
-        z-index: 10;
-    }
-
-    #menu-check:checked~#navbar {
-        visibility: visible;
-        height: calc(100vh - 50px);
-    }
-
-    #menu-check:checked~#menu-mobile {
-        border-top: none;
-    }
-    #menu-check:checked~#menu-mobile::before {
         width: 20px;
+        height: 2px;
+        background: white;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        transition: 0.5s;
+    }
+
+    header label::after {
+        content: " ";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: white;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        transition: 0.5s;
+    }
+
+    header ul#navbar {
+        visibility: hidden;
+        display: block;
+        height: 0;
+        list-style: none;
+        text-align: center;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        background: var(--cinza);
+        transition: 1s;
+        overflow-y: hidden;
+    }
+
+    header ul#navbar li {
+        padding: 15px 0;
+    }
+
+    header.activet label::before {
         transform: rotate(-130deg);
     }
-    #menu-check:checked~#menu-mobile::after {
-        width: 20px;
+
+    header.activet label::after {
         transform: rotate(130deg);
         position: relative;
         top: -7px;
     }
 
+    header.activet label {
+        border-top: none;
+    }
 }
