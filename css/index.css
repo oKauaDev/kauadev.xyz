@@ -171,6 +171,7 @@ body {
 }
 
 @media (max-width: 800px) {
+
     #container #quemsou {
         text-align: center;
     }
@@ -249,10 +250,14 @@ body {
 
     #container #top #top-title {
         width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
     }
     
     #container #top #subtitle-top {
         width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 
     #container #top #github-top-button {
