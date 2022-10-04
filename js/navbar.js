@@ -20,9 +20,15 @@ navbar.addEventListener('click', event => {
 window.addEventListener('click', event => {
     if (event.target == menu) {
         if (menu.style.height != "0px") {
-            menu.style.height = "0";
-            menu.style.visibility = "hidden";
-            header.classList.remove("activet");
+            closeNavbar();
         }
     }
 });
+
+function closeNavbar() {
+    if (menu.style.height != "0px") {
+        menu.style.height = "0";
+        menu.style.visibility = "hidden";
+        header.classList.remove("activet");
+    }
+}

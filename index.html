@@ -9,15 +9,23 @@
     <title>Portifolio LadinoXx</title>
 </head>
 <body>
+    <div id="base-modal" visible="false" animation="top">
+        <div id="modalcontatos">
+            <img src="imgs/contato.png">
+            <a href="https://discordapp.com/users/668849866805477398">Discord</a>
+            <a href="https://github.com/LadinoXx">Github</a>
+            <a href="">Twitter</a>
+        </div>
+    </div>
     <header>
         <img src="imgs/logo.png">
         <div>
             <label for="" id="menu-mobile"></label>
             <ul id="navbar">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Trabalhos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a onclick="closeNavbar()" href="">Inicio</a></li>
+                <li><a onclick="closeNavbar()" href="#quemsou">Sobre</a></li>
+                <li><a onclick="closeNavbar()" href="#esperiencia">Experiência</a></li>
+                <li class="modalopenbutton" onclick="openModal()"><a class="modalopenbutton" onclick="openModal()">Contato</a></li>
             </ul>
         </div>
     </header>
@@ -25,7 +33,7 @@
         <div id="top">
             <h1 id="top-title" animation="top">Desenvolvedor Front-End e intusiasta na programação, criado <span class="custom-cian-color">produtos digitais</span> pra você e seu projeto.</h1>
             <p id="subtitle-top" class="duble-font-style">Desenvolvedor web com as linguagens: HTML, CSS, PHP, JS e estudando mais a cada dia.</p>
-            <a id="github-top-button" animation="bottom" class="duble-font-style" href="">Github</a>
+            <a id="github-top-button" animation="bottom" class="duble-font-style" href="https://github.com/LadinoXx">Github</a>
         </div>
         <div id="quemsou">
             <div>
@@ -100,7 +108,8 @@
         </div>
     </div>
     <footer>
-
+        <p>&copy; <span class="custom-cian-color">LadinoXx</span> 2022.</p>
+        <p>Todos os direitos reservados</p>
     </footer>
     <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>

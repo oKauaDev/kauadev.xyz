@@ -225,6 +225,7 @@ body {
 
 #container #linguagens-trabalhadas #demonstracao {
     width: 45%;
+    margin: 0 4%;
     word-break: keep-all;
 }
 
@@ -247,6 +248,16 @@ body {
 
 #container #linguagens-trabalhadas .linguagem-index p {
     display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 2%;
+    color: white;
+    font-size: 1.3rem;
+    border-top: 1px solid rgb(67, 67, 67);
 }
 
 @media (max-width: 800px) {
@@ -276,6 +287,7 @@ body {
     .title-modern-class {
         margin-left: 0;
         text-align: center;
+        margin: 0 5%;
     }
     
     .title-modern-class::after {
@@ -361,6 +373,16 @@ body {
         margin: 0 auto;
         margin-top: 50px;
     }
+
+    footer {
+        display: block;
+        margin: 0 5%;
+        padding: 2%;
+        color: white;
+        font-size: 1rem;
+        border-top: 1px solid rgb(67, 67, 67);
+        text-align: center;
+    }
 }
 
 /*
@@ -391,4 +413,51 @@ body {
 [animation].animated {
     transform: translate3d(0, 0, 0);
     opacity: 1;
+}
+
+/*
+    Modal de contatos
+*/
+
+#base-modal {
+    width: 100%;
+    background: none;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    height: 300px;
+}
+
+#base-modal #modalcontatos {
+    width: 40%;
+    border: 2px solid rgb(33, 33, 33);
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    transition: none;
+    padding: 20px;
+    margin: 0 auto;
+    background: var(--cinza);
+}
+
+#base-modal #modalcontatos img {
+    width: 10%;
+}
+
+#base-modal #modalcontatos a {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 50%;
+    padding: 5%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background: rgb(33, 33, 33);
+    border: 1px solid rgb(33, 33, 33);
+    transition: 1s;
+}
+
+#base-modal #modalcontatos a:hover {
+    border: 1px solid var(--blue-cian);
 }

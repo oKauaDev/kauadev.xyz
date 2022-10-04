@@ -56,51 +56,13 @@ listProjects.forEach(Lelement => {
  * Ultima função de Js, a parte de lingugens
 */
 
-const LinguagensDivs = document.querySelectorAll(".linguagem-index-select");
 const DescriptionLinguage = document.getElementById('description-linguage');
-
-LinguagensDivs.forEach(ElementoD => {
-    ElementoD.addEventListener("mouseenter", function(event) {
-        const target = event.target.parentElement;
-        switch (target.getAttribute('type-linguage')) {
-            case "css":
-                DescriptionLinguage.innerHTML = "Ao falarmos sobre o que é CSS (Cascading Style Sheet, ou Folha de Estilo em Cascatas), é necessário dizer que sua aplicação é utilizada na estilização de componentes escritos em linguagens de marcação.";
-                break;
-        
-            case "js":
-                DescriptionLinguage.innerHTML = "O JavaScript é utilizado para controlar o HTML e o CSS, usado para manipular comportamentos na página. O que seria esse comportamento? Por exemplo, submenu, carousel, etc. Portanto, O JavaScript permite implementar itens complexos em páginas web.";
-                break;
-        
-            case "html":
-                DescriptionLinguage.innerHTML = "HTML (Linguagem de Marcação de Hipertexto) é o código que você usa para estruturar uma página web e seu conteúdo. Por exemplo, o conteúdo pode ser estruturado em parágrafos, em uma lista com marcadores ou usando imagens e tabelas.";
-                break;
-        
-        }
-        const name = target.querySelector("p");
-        name.style.display = "block";
-    });
-    ElementoD.addEventListener('mouseout', function(event) {
-        const target = event.target;
-        if (event.target.classList.contains("linguagem-index")) {
-            const target = event.target;
-            const name = target.querySelector("p");
-            removeDescriptionLinguage(name);
-        }else{
+if (window.innerWidth > 800) {
+    const LinguagensDivs = document.querySelectorAll(".linguagem-index-select");
+    LinguagensDivs.forEach(ElementoD => {
+        ElementoD.addEventListener("mouseenter", function(event) {
             const target = event.target.parentElement;
-            const name = target.querySelector("p");
-            removeDescriptionLinguage(name);
-        }
-    });
-
-    if (window.innerWidth < 800) {
-        ElementoD.addEventListener('click', function(event) {
-            let target = event.target;
-            if (target.classList.contains("linguagem-index")) {
-                removeDescriptionLinguage(target.querySelector("p"));
-            }else{
-                removeDescriptionLinguage(event.target.parentElement.querySelector("p"));
-            }
-            switch (target.parentElement.getAttribute('type-linguage')) {
+            switch (target.getAttribute('type-linguage')) {
                 case "css":
                     DescriptionLinguage.innerHTML = "Ao falarmos sobre o que é CSS (Cascading Style Sheet, ou Folha de Estilo em Cascatas), é necessário dizer que sua aplicação é utilizada na estilização de componentes escritos em linguagens de marcação.";
                     break;
@@ -114,13 +76,64 @@ LinguagensDivs.forEach(ElementoD => {
                     break;
             
             }
-            const name = target.parentElement.querySelector("p");
+            const name = target.querySelector("p");
             name.style.display = "block";
         });
-    }
-});
+        ElementoD.addEventListener('mouseout', function(event) {
+            if (event.target.classList.contains("linguagem-index")) {
+                const target = event.target;
+                const name = target.querySelector("p");
+                removeDescriptionLinguage(name);
+            }else{
+                const target = event.target.parentElement;
+                const name = target.querySelector("p");
+                removeDescriptionLinguage(name);
+            }
+        });
+    });
+}else{
+    linguagePromisse();
+}
 
 function removeDescriptionLinguage(element) {
     element.style.display = "none";
     DescriptionLinguage.innerHTML = "*Clique ou passe o mouse por cima para ver.";
 }
+
+//loop de código para mobile
+
+async function linguagePromisse() {
+    for (c = 0; true; c += 5) {
+        switch (c % 3) {
+            case 2:
+                DescriptionLinguage.innerHTML = "Ao falarmos sobre o que é CSS (Cascading Style Sheet, ou Folha de Estilo em Cascatas), é necessário dizer que sua aplicação é utilizada na estilização de componentes escritos em linguagens de marcação.";
+                break;
+        
+            case 1:
+                DescriptionLinguage.innerHTML = "O JavaScript é utilizado para controlar o HTML e o CSS, usado para manipular comportamentos na página. O que seria esse comportamento? Por exemplo, submenu, carousel, etc. Portanto, O JavaScript permite implementar itens complexos em páginas web.";
+                break;
+        
+            case 0:
+                DescriptionLinguage.innerHTML = "HTML (Linguagem de Marcação de Hipertexto) é o código que você usa para estruturar uma página web e seu conteúdo. Por exemplo, o conteúdo pode ser estruturado em parágrafos, em uma lista com marcadores ou usando imagens e tabelas.";
+                break; 
+        }
+        await new Promise(res => setTimeout(res, 10000));
+    }
+}
+
+//Modal contatos
+
+const modal = document.getElementById("base-modal");
+
+function openModal() {
+    modal.setAttribute("visible", "true");
+    modal.style.display = "block";
+    modal.style.top = ((window.innerHeight / 2) - 150) + "px";
+}
+
+window.addEventListener('click', event => {
+    if (!event.target.classList.contains("modalopenbutton")) {
+        modal.setAttribute("visible", "false");
+        modal.style.display = "none";
+    }
+});
