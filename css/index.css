@@ -442,6 +442,7 @@ footer {
 
 #base-modal #modalcontatos img {
     width: 10%;
+    min-width: 70px;
 }
 
 #base-modal #modalcontatos a {

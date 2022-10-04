@@ -126,6 +126,7 @@ async function linguagePromisse() {
 const modal = document.getElementById("base-modal");
 
 function openModal() {
+    closeNavbar();
     modal.setAttribute("visible", "true");
     modal.style.display = "block";
     modal.style.top = ((window.innerHeight / 2) - 150) + "px";
