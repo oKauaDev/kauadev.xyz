@@ -25,6 +25,10 @@ body {
     font-size: 1.5rem;
 }
 
+#container #top {
+    margin-top: 80px;
+}
+
 #container #top #top-title {
     width: 45%;
     margin-left: 5%;
@@ -112,14 +116,14 @@ body {
     margin-left: 20%;
 }
 
-#esperienciat {
+.title-modern-class {
     color: white;
     margin-bottom: 5%;
     margin-left: 10%;
     text-align: left;
 }
 
-#esperienciat::after {
+.title-modern-class::after {
     content: " .";
     color: var(--blue-cian);
 }
@@ -170,6 +174,81 @@ body {
     width: 60%;
 }
 
+#container #servicos {
+    background: rgb(16, 16, 16);
+    padding: 10px 0;
+    margin-bottom: 5%;
+}
+
+#container #servicos #servicos-list{
+    margin-bottom: 5%;
+    margin-left: 10%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#container #servicos #servicos-list .index-servicos {
+    background: rgb(34, 34, 34);
+    display: inline-block;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 300px;
+    word-break: keep-all;
+    transition: 1s;
+    border: 1.5px solid rgb(34, 34, 34);
+}
+
+#container #servicos #servicos-list .index-servicos:hover {
+    border: 1.5px solid var(--blue-cian);
+}
+
+#container #servicos #servicos-list .index-servicos img {
+    width: 80px;
+}
+
+#container #servicos #servicos-list .index-servicos h2 {
+    margin: 10px 0;
+}
+
+#container #linguagens-trabalhadas {
+    margin-bottom: 5%;
+    margin-left: 10%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container #linguagens-trabalhadas #demonstracao {
+    width: 45%;
+    word-break: keep-all;
+}
+
+#container #linguagens-trabalhadas #list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    width: 50%;
+}
+
+#container #linguagens-trabalhadas .linguagem-index {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+#container #linguagens-trabalhadas .linguagem-index img {
+    width: 100px;
+}
+
+#container #linguagens-trabalhadas .linguagem-index p {
+    display: none;
+}
+
 @media (max-width: 800px) {
 
     #container #quemsou {
@@ -194,12 +273,12 @@ body {
         word-break: break-all;
     }
 
-    #esperienciat {
+    .title-modern-class {
         margin-left: 0;
         text-align: center;
     }
     
-    #esperienciat::after {
+    .title-modern-class::after {
         content: ".";
         color: var(--blue-cian);
     }
@@ -241,6 +320,24 @@ body {
         width: auto;
         margin: 0 5%;
     }
+
+    #container #linguagens-trabalhadas {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #container #linguagens-trabalhadas #list {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #container #linguagens-trabalhadas #demonstracao {
+        width: auto;
+        display: block;
+        word-break: keep-all;
+        text-align: center;
+    }
 }
 
 @media (max-width: 650px) {
@@ -264,4 +361,34 @@ body {
         margin: 0 auto;
         margin-top: 50px;
     }
+}
+
+/*
+    Parte de animações com scroll
+*/
+
+[animation] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[animation="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[animation="rigth"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[animation="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[animation="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[animation].animated {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
 }

@@ -3,13 +3,37 @@
     --blue-cian: rgb(0, 116, 175);
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--cinza);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--blue-cian);
+  }
+
 header {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: var(--cinza);
     box-shadow: 5px 0 10px black;
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    z-index: 100;
+}
+
+header.transparent {
+    background: rgba(26, 26, 26, 0.428);
+}
+
+header.activet {
+    background: var(--cinza);
 }
 
 header img {

@@ -25,20 +25,20 @@
         <div id="top">
             <h1 id="top-title" animation="top">Desenvolvedor Front-End e intusiasta na programação, criado <span class="custom-cian-color">produtos digitais</span> pra você e seu projeto.</h1>
             <p id="subtitle-top" class="duble-font-style">Desenvolvedor web com as linguagens: HTML, CSS, PHP, JS e estudando mais a cada dia.</p>
-            <a id="github-top-button" class="duble-font-style" href="">Github</a>
+            <a id="github-top-button" animation="bottom" class="duble-font-style" href="">Github</a>
         </div>
         <div id="quemsou">
             <div>
-                <img id="personagem" src="imgs/ladino.svg">
+                <img animation="left" id="personagem" src="imgs/ladino.svg">
             </div>
             <div>
-                <h1>Sobre mim</h1>
-                <p id="sobremim-text">Sou Desenvolvedor a mais de 2 anos, era focado em PHP desenvolvendo plugins para Minecraft com a API Pocketmine-MP, atualmente estou aprendendo mais sobre o mundo web.</p>
+                <h1 animation="top">Sobre mim</h1>
+                <p animation="bottom" id="sobremim-text">Sou Desenvolvedor a mais de 2 anos, era focado em PHP desenvolvendo plugins para Minecraft com a API Pocketmine-MP, atualmente estou aprendendo mais sobre o mundo web.</p>
             </div>
         </div>
-        <h1 id="esperienciat">Minha esperiencia</h1>
+        <h1 class="title-modern-class">Minha esperiencia</h1>
         <div id="esperiencia">
-            <div id="projetos">
+            <div id="projetos" animation="left">
                 <ul>
                     <li>
                         <a  project-id="p-1" class="selectedProject">PlayScript</a>
@@ -52,8 +52,50 @@
                 </ul>
             </div>
             <div id="projeto-detalhe">
-                <h1 id="title-projeto">Nome do projeto...</h1>
-                <p id="description-projeto">Descrição do projeto...</p>
+                <h1 id="title-projeto" animation="rigth">Nome do projeto...</h1>
+                <p id="description-projeto" animation="rigth">Descrição do projeto...</p>
+            </div>
+        </div>
+        <div id="servicos">
+            <h1 class="title-modern-class">Serviços</h1>
+            <div id="servicos-list">
+                <div class="index-servicos" animation="top">
+                    <img src="imgs/UI_UX.png">
+                    <h2>Desingner</h2>
+                    <p>Ofereço desingner de sites únicos, de forma clara e que prenda a atenção do usuario.</p>
+                </div>
+                
+                <div class="index-servicos" animation="bottom">
+                    <img src="imgs/code.png">
+                    <h2>Código</h2>
+                    <p>Usamos as linguagens HTML, CSS & Ecma Script (Versão padronizada do JS) para deixar seu site no seu estilo, e usamos PHP fazer o Back-End.</p>
+                </div>
+                
+                <div class="index-servicos" animation="top">
+                    <img src="imgs/entrega.png">
+                    <h2>Produto</h2>
+                    <p>entregamos seu produto no prazo pedido 9Ou um pouco antes :D ), isso para garantir a você a melhor experiência possível conosco!</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="title-modern-class">Mais das linguagens que sei</h1>
+        <div id="linguagens-trabalhadas" animation="top">
+            <div id="demonstracao">
+                <p id="description-linguage">*Clique ou passe o mouse por cima para ver.</p>
+            </div>
+            <div id="list">
+                <div class="linguagem-index" type-linguage="css">
+                    <img class="linguagem-index-select" src="imgs/css.png">
+                    <p source="true">CSS 3</p>
+                </div>
+                <div class="linguagem-index" type-linguage="js">
+                    <img class="linguagem-index-select" src="imgs/js.png">
+                    <p source="true">JS</p>
+                </div>
+                <div class="linguagem-index" type-linguage="html">
+                    <img class="linguagem-index-select" src="imgs/html.png">
+                    <p source="true">HTML 5</p>
+                </div>
             </div>
         </div>
     </div>
@@ -62,5 +104,6 @@
     </footer>
     <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scrollAnimation.js"></script>
 </body>
 </html>
