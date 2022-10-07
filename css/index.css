@@ -425,12 +425,22 @@ footer {
     display: none;
     position: fixed;
     z-index: 1000;
-    height: 300px;
+    animation: animationModal 1s;
+}
+
+@keyframes animationModal {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 80px;
+    }
 }
 
 #base-modal #modalcontatos {
     width: 40%;
-    border: 2px solid rgb(33, 33, 33);
+    border: 2px solid var(--blue-cian);
     border-radius: 20px;
     display: block;
     text-align: center;
@@ -461,4 +471,11 @@ footer {
 
 #base-modal #modalcontatos a:hover {
     border: 1px solid var(--blue-cian);
+}
+
+@media (max-width: 650px) {
+    #base-modal #modalcontatos a {
+        width: 50%;
+        padding: 7% 25%;
+    }
 }
