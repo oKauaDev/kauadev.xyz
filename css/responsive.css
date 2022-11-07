@@ -133,6 +133,15 @@
   }
 }
 
+@media (max-width: 400px) {
+  section.certificados
+    .certificates
+    .all-certificados
+    .certificate-item::before {
+    left: 8px;
+  }
+}
+
 /* Certificados */
 @media (max-width: 1279px) {
   section.certificados .certificates .all-certificados .certificate-item {
