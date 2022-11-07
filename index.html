@@ -1,118 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <title>Portifolio LadinoXx</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Ladino | Portifolio</title>
 </head>
+
 <body>
-    <div id="base-modal" visible="false" animation="top">
-        <div id="modalcontatos">
-            <img src="imgs/contato.png">
-            <a href="https://discordapp.com/users/668849866805477398">Discord</a>
-            <a href="https://github.com/LadinoXx">Github</a>
-            <a href="">Twitter</a>
-        </div>
-    </div>
     <header>
-        <img src="imgs/logo.png">
-        <div>
-            <label for="" id="menu-mobile"></label>
-            <ul id="navbar">
-                <li><a onclick="closeNavbar()" href="#">Inicio</a></li>
-                <li><a onclick="closeNavbar()" href="#quemsou">Sobre</a></li>
-                <li><a onclick="closeNavbar()" href="#esperiencia">Experiência</a></li>
-                <li class="modalopenbutton" onclick="openModal()"><a class="modalopenbutton" onclick="openModal()">Contato</a></li>
+        <div class="navbar">
+            <div>
+                <img src="assets/svg/LADINO.svg" />
+            </div>
+            <div>
+                <label id="hamburger"></label>
+            </div>
+            <ul>
+                <li><a class="font-sans-pro" href="">Experiência</a></li>
+                <li><a class="font-sans-pro" href="">Certificados</a></li>
+                <li><a class="font-sans-pro" href="">Projetos</a></li>
+                <li><a class="font-sans-pro" href="">Contato</a></li>
             </ul>
         </div>
     </header>
-    <div id="container">
-        <div id="top">
-            <h1 id="top-title" animation="top">Desenvolvedor Front-End e intusiasta na programação, criando <span class="custom-cian-color">produtos digitais</span> para você e seu projeto.</h1>
-            <p id="subtitle-top" class="duble-font-style">Desenvolvedor web com as linguagens: HTML, CSS, PHP, JS e estudando mais a cada dia.</p>
-            <a id="github-top-button" animation="bottom" class="duble-font-style" href="https://github.com/LadinoXx">Github</a>
+    <section class="apresentacao">
+        <dir>
+            <img src="assets/gif/ezgif.com-gif-maker_3.gif" />
+        </dir>
+        <div>
+            <h1 class="font-sans-pro">Desenvolvedor Front end <span class="contrast-cian">&</span> Web Designer<span class="contrast-cian">.</span></h1>
+            <p class="font-sans-code">Sou desenvolvedor e <span class="contrast-cian">Web Designer</span> júnior, com experiência no mercado da programação, trabalhando já a <span class="contrast-cian">3 anos</span> nesse mercado enorme.</p>
         </div>
-        <div id="quemsou">
-            <div>
-                <img animation="left" id="personagem" src="imgs/ladino.svg">
-            </div>
-            <div>
-                <h1 animation="top">Sobre mim</h1>
-                <p animation="bottom" id="sobremim-text">Sou Desenvolvedor a 2 anos, focava em PHP desenvolvendo plugins para Minecraft com a API Pocketmine-MP, atualmente estou aprendendo mais sobre o mundo WEB.</p>
-            </div>
+    </section>
+    <section class="experiencia">
+        <div>
+            <h1 class="font-roboto">EXP<br>ERI<br>ÊN<br>CIA</h1>
         </div>
-        <h1 class="title-modern-class">Minha Experiência</h1>
-        <div id="esperiencia">
-            <div id="projetos" animation="left">
-                <ul>
-                    <li>
-                        <a  project-id="p-1" class="selectedProject">PlayScript</a>
-                    </li>
-                    <li>
-                        <a project-id="p-2">EnableEncryptedPlugin</a>
-                    </li>
-                    <li>
-                        <a project-id="p-3">Bedrock-community</a>
-                    </li>
-                </ul>
+        <div>
+            <div class="experience-item">
+                <div>
+                    <h3>HTML</h3>
+                    <p class=".font-sans-pro">Cursado em HTML 5 e ainda em aprendizado.</p>
+                    <h2>2021 - 2022</h2>
+                </div>
+                <img src="assets/svg/Grafico container 1html-grafico.svg">
             </div>
-            <div id="projeto-detalhe">
-                <h1 id="title-projeto" animation="rigth">Nome do projeto...</h1>
-                <p id="description-projeto" animation="rigth">Descrição do projeto...</p>
+            <div class="experience-item">
+                <div>
+                    <h3>CSS</h3>
+                    <p class=".font-sans-pro">Cursado em CSS3 no nível intermediario</p>
+                    <h2>2021 - 2022</h2>
+                </div>
+                <img src="assets/svg/css-grafico.svg">
             </div>
-        </div>
-        <div id="servicos">
-            <h1 class="title-modern-class">Serviços</h1>
-            <div id="servicos-list">
-                <div class="index-servicos" animation="top">
-                    <img src="imgs/UI_UX.png">
-                    <h2>DZN</h2>
-                    <p>Ofereço dzns de sites únicos, de forma clara e que prenda a atenção do usuario.</p>
+            <div class="experience-item">
+                <div>
+                    <h3>JavaScript</h3>
+                    <p class=".font-sans-pro">Cursado em JavaScript e estu no nível básico.</p>
+                    <h2>2022</h2>
                 </div>
-                
-                <div class="index-servicos" animation="bottom">
-                    <img src="imgs/code.png">
-                    <h2>Código</h2>
-                    <p>Uso as linguagens HTML, CSS & Ecma Script (Versão padronizada do JS) para deixar seu site no seu estilo, e usamos PHP fazer o Back-End.</p>
+                <img src="assets/svg/js grafico.svg">
+            </div>
+            <div class="experience-item">
+                <div>
+                    <h3>WEB DESIGN</h3>
+                    <p class=".font-sans-pro">Cursado em Web Design intermediario & indo ao avançado.</p>
+                    <h2>2022</h2>
                 </div>
-                
-                <div class="index-servicos" animation="top">
-                    <img src="imgs/entrega.png">
-                    <h2>Produto</h2>
-                    <p>Entregamos seu produto no prazo pedido ou um pouco antes :D ), isso para garantir a você a melhor experiência possível conosco!</p>
-                </div>
+                <img src="assets/svg/web design grafico.svg">
             </div>
         </div>
-        <h1 class="title-modern-class">Linguagens que programo.</h1>
-        <div id="linguagens-trabalhadas" animation="top">
-            <div id="demonstracao">
-                <p id="description-linguage" style="color: rgb(200, 200, 200);">*Clique ou passe o mouse por cima para ver.</p>
+    </section>
+    <section class="certificados">
+        <h1 class="font-sans-pro">Certificados <span class="contrast-cian">.</span></h1>
+        <div class="certificates">
+            <div class="all-certificados">
+                <div class="certificate-item" certificate="assets/png/webdesign-certificado.apng">
+                    <div>
+                        <p class="date font-roboto">2022</p>
+                        <div class="description">
+                            <h1 class="font-sans-pro">JS - Iniciante</h1>
+                            <p class="font-sans-code">Curso grátis de JS onde aprendemos o básico da linguagem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-item" certificate="assets/png/webdesign-certificado.png">
+                    <div>
+                        <p class="date font-roboto">2022</p>
+                        <div class="description">
+                            <h1 class="font-sans-pro">WEB DESIGN - Iniciante</h1>
+                            <p class="font-sans-code">Um curso pago onde aprendi muito sobre web design, o nível básico.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="list">
-                <div class="linguagem-index" type-linguage="css">
-                    <img class="linguagem-index-select" src="imgs/css.png">
-                    <p source="true">CSS 3</p>
-                </div>
-                <div class="linguagem-index" type-linguage="js">
-                    <img class="linguagem-index-select" src="imgs/js.png">
-                    <p source="true">JS</p>
-                </div>
-                <div class="linguagem-index" type-linguage="html">
-                    <img class="linguagem-index-select" src="imgs/html.png">
-                    <p source="true">HTML 5</p>
-                </div>
+            <div class="certificado-selecionado">
+                <h1 class="font-sans-pro">Certificado</h1>
+                <img src="assets/png/webdesign-certificado.png" id="certificado0">
             </div>
         </div>
-    </div>
+    </section>
+    <section class="contato">
+        <form action="" method="post">
+            <h1 class="font-sans-pro">Contato <span class="contrast-cian">.</span></h1>
+            <div class="input-item">
+                <label class="font-sans-pro" for="name">Nome</label> <br>
+                <input type="text" name="name" id="name" autocomplete="off">
+            </div>
+            <div class="input-item">
+                <label class="font-sans-pro" for="email">Email</label> <br>
+                <input type="email" name="email" id="email" autocomplete="off">
+            </div>
+            <div class="input-item">
+                <label class="font-sans-pro" for="mensagem">Mensagem</label> <br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+            <input class="submit font-roboto" type="submit" value="ENVIAR">
+        </form>
+        <div class="sociais">
+            <h1 class="font-sans-pro">Redes sociais<span class="contrast-cian">.</span></h1>
+            <p class="font-sans-code">Veja aqui algumas das minhas “Redes sociais” abaixo.</p>
+            <div class="redessociais">
+                <a href=""><img src="assets/svg/discord.svg"></a>
+                <a href=""><img src="assets/svg/github.svg"></a>
+                <a href=""><img src="assets/svg/twitter.svg"></a>
+                <a href=""><img src="assets/svg/youtube.svg"></a>
+            </div>
+        </div>
+    </section>
+    <hr class="espacamento">
     <footer>
-        <p>&copy; <span class="custom-cian-color">LadinoXx</span> 2022.</p>
-        <p>Todos os direitos reservados</p>
+        <p>Ladino. Quase todos os direitos reservados.</p>
     </footer>
-    <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/scrollAnimation.js"></script>
 </body>
+
 </html>

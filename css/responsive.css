@@ -1,0 +1,219 @@
+/* Navbar */
+
+@media (max-width: 650px) {
+  header .navbar label {
+    display: block;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid var(--c10-color);
+  }
+
+  header .navbar label::before {
+    content: "";
+    width: 20px;
+    margin-top: 5px;
+    height: 2px;
+    display: block;
+    background: var(--c10-color);
+    position: relative;
+    transition: 0.5s;
+  }
+
+  header .navbar label::after {
+    content: "";
+    width: 20px;
+    margin-top: 5px;
+    height: 2px;
+    display: block;
+    background: var(--c10-color);
+    position: relative;
+    transition: 0.5s;
+  }
+
+  header .navbar.open label {
+    border-top: none;
+  }
+
+  header .navbar.open label::after {
+    transform: rotate(135deg);
+    top: -7px;
+  }
+
+  header .navbar.open label::before {
+    transform: rotate(-135deg);
+  }
+
+  header .navbar ul {
+    visibility: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    padding-top: calc(5% + 50px);
+    height: 100vh;
+    width: 0px;
+    background: var(--c10-color);
+    transition: 0.5s;
+    z-index: 10;
+  }
+
+  header .navbar ul a {
+    visibility: hidden;
+  }
+
+  header .navbar.open ul {
+    width: 75%;
+    visibility: visible;
+  }
+
+  header .navbar.open ul a {
+    padding: 20px 10px;
+    color: white;
+    visibility: visible;
+  }
+
+  header .navbar.open ul a:hover::after {
+    width: 0;
+  }
+
+  header .navbar.open ul a:hover {
+    color: var(--ciano7-color);
+  }
+}
+
+/* apresentacao */
+@media (max-width: 900px) {
+  section.apresentacao {
+    display: block;
+    margin: 0 5%;
+  }
+
+  section.apresentacao img {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  section.apresentacao h1 {
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  section.apresentacao p {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  section.apresentacao h1 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  section.apresentacao p {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
+}
+
+/* experiencia */
+@media (max-width: 650px) {
+  section.experiencia {
+    padding: 0 5%;
+    display: block;
+  }
+
+  section.experiencia h1 {
+    display: none;
+  }
+
+  section.experiencia .experience-item {
+    margin: 20px auto;
+  }
+}
+
+/* Certificados */
+@media (max-width: 1279px) {
+  section.certificados .certificates .all-certificados .certificate-item {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  section.certificados .certificates .all-certificados .certificate-item {
+    width: 50%;
+  }
+
+  section.certificados .certificado-selecionado {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  section.certificados .certificates .all-certificados .certificate-item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 679px) {
+  section.certificados .certificado-selecionado {
+    display: none;
+  }
+
+  section.certificados h1 {
+    font-size: 3rem;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  section.certificados h1 {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+}
+
+/* Contato */
+@media (max-width: 743px) {
+  section.contato {
+    padding: 0 5% 0 5%;
+    display: block;
+  }
+
+  section.contato .sociais {
+    margin: 0 auto;
+  }
+
+  section.contato .input-item input,
+  section.contato .input-item textarea {
+    width: 80%;
+  }
+}
+
+@media (max-width: 679px) {
+  section.contato h1 {
+    font-size: 3rem;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  section.contato h1 {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+}
+
+/* geral */
+@media (max-width: 300px) {
+  * {
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 600px) {
+  footer p {
+    font-size: 18px;
+  }
+}
