@@ -1,31 +1,3 @@
-<?php
-$erros = [];
-if (!empty($_POST)) {
-    $mail = $_POST["email"];
-    $name = $_POST["name"];
-    $msg = $_POST["mensagem"];
-    if (strlen($mail) < 15 or strlen($mail) > 200) {
-        $erros[] = "Digite um email correto.";
-    }
-
-    if (strlen($name) > 100) {
-        $erros[] = "Digite um nome de usuário menor.";
-    }
-
-    if (strlen($name) < 8) {
-        $erros[] = "Digite um nome de usuário maior.";
-    }
-
-    if (strlen($msg) < 50 or strlen($msg) > 1000) {
-        $erros[] = "Sua mensagem deve ter de 50 a 1000 caracteres.";
-    }
-    if (count($erros) == 0) {
-        $mensagem = "Usuário: " . $name . PHP_EOL . "Enviado de: " . $mail . PHP_EOL . PHP_EOL . "Mensagem: " . $msg;
-        mail("kauacomtil021@gmail.com", "Novo Contato!", $mensagem);
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -133,31 +105,6 @@ if (!empty($_POST)) {
     </div>
   </section>
   <section class="contato" id="contato">
-    <div>
-      <form action="" method="post">
-        <h1 class="font-sans-pro">Contato <span class="contrast-cian">.</span></h1>
-        <div class="input-item">
-          <label class="font-sans-pro" for="name">Nome</label> <br>
-          <input type="text" name="name" id="name" autocomplete="off">
-        </div>
-        <div class="input-item">
-          <label class="font-sans-pro" for="email">Email</label> <br>
-          <input type="email" name="email" id="email" autocomplete="off">
-        </div>
-        <div class="input-item">
-          <label class="font-sans-pro" for="mensagem">Mensagem</label> <br>
-          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-        </div>
-        <input class="submit font-roboto" type="submit" value="ENVIAR">
-      </form>
-      <?php
-        if (count($erros) > 0) {
-            foreach($erros as $error) {
-                echo "<p class='error-item'>" . $error . "</p>";
-            }
-        }
-      ?>
-    </div>
     <div class="sociais">
       <h1 class="font-sans-pro">Redes sociais<span class="contrast-cian">.</span></h1>
       <p class="font-sans-code">Veja aqui algumas das minhas “Redes sociais” abaixo.</p>

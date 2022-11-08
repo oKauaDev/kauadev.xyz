@@ -300,51 +300,10 @@ section.contato h1 {
   margin-bottom: 52px;
 }
 
-section.contato .input-item label {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 38px;
-  color: var(--c8-color);
-}
-
-section.contato .input-item input {
-  width: 445px;
-  max-width: 445px;
-  height: 53px;
-  background: var(--c1-color);
-  border: 1px solid var(--c2-color);
-  outline-color: var(--c10-color);
-  padding: 0 10px;
-  margin-bottom: 40px;
-}
-
-section.contato .input-item textarea {
-  height: 183px;
-  width: 445px;
-  max-width: 445px;
-  background: var(--c1-color);
-  border: 1px solid var(--c2-color);
-  outline-color: var(--c10-color);
-  padding: 10px;
-  margin-bottom: 40px;
-}
-
-section.contato input.submit {
-  background: linear-gradient(180deg, #11b6e0 0%, #1c7eb6 100%);
-  border-radius: 5px;
-  padding: 15px 35px;
-  border: none;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  color: white;
-  margin-bottom: 80px;
-}
-
 section.contato .sociais {
   text-align: center;
   margin-right: 10%;
+  margin: 0 auto;
 }
 
 section.contato .sociais h1 {
@@ -392,16 +351,4 @@ footer p {
   line-height: 30px;
   color: var(--c8-color);
   margin-bottom: 5%;
-}
-
-.error-item {
-  background: rgb(255, 150, 150);
-  border: 1.5px solid rgb(255, 92, 92);
-  color: rgb(41, 4, 4);
-  border-radius: 5px;
-  padding: 10px;
-  width: 80%;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
 }
