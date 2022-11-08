@@ -393,3 +393,15 @@ footer p {
   color: var(--c8-color);
   margin-bottom: 5%;
 }
+
+.error-item {
+  background: rgb(255, 150, 150);
+  border: 1.5px solid rgb(255, 92, 92);
+  color: rgb(41, 4, 4);
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}

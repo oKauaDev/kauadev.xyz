@@ -99,6 +99,11 @@
     width: 100%;
   }
 
+  section.apresentacao h1::before {
+    height: 50px;
+    top: 60px;
+  }
+
   section.apresentacao p {
     margin-bottom: 120px;
   }
@@ -114,6 +119,11 @@
     width: 100%;
     font-size: 1.2rem;
     line-height: 20px;
+  }
+
+  section.apresentacao h1::before {
+    height: 35px;
+    top: 40px;
   }
 }
 
