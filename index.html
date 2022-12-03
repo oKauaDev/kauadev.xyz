@@ -1,124 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/responsive.css">
-  <title>Ladino | Portifolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- importar fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Ladino.dev</title>
 </head>
 
 <body>
   <header>
-    <div class="navbar">
-      <div>
-        <img src="assets/svg/LADINO.svg" />
-      </div>
-      <div>
-        <label id="hamburger"></label>
-      </div>
-      <ul>
-        <li><a class="font-sans-pro" href="#experiencia">Experiência</a></li>
-        <li><a class="font-sans-pro" href="certificados">Certificados</a></li>
-        <li><a class="font-sans-pro" href="contato">Contato</a></li>
-      </ul>
-    </div>
+    <a href="/"><img src="assets/LADINO.svg" alt="LADINO"></a>
+    <label></label>
+    <ul>
+      <li><a href="#cursos" data-baseText=".cursos">.cursos</a></li>
+      <li><a href="#experiencia" data-baseText=".experiência">.experiência</a></li>
+      <li><a href="#sobre" data-baseText=".sobre">.sobre</a></li>
+    </ul>
   </header>
-  <section class="apresentacao" id="apresentacao">
-    <dir>
-      <img src="assets/gif/ezgif.com-gif-maker_3.gif" />
-    </dir>
-    <div>
-      <h1 class="font-sans-pro">Desenvolvedor Front end <span class="contrast-cian">&</span> Web Designer<span class="contrast-cian">.</span></h1>
-      <p class="font-sans-code">Sou desenvolvedor e <span class="contrast-cian">Web Designer</span> júnior, com experiência no mercado da programação, trabalhando já a <span class="contrast-cian">3 anos</span> nesse mercado enorme.</p>
+
+  <section class="container">
+    <div class="lineDecoration">
+      <label class="line"></label>
     </div>
-  </section>
-  <section class="experiencia" id="experiencia">
-    <div>
-      <h1 class="font-roboto">EXP<br>ERI<br>ÊN<br>CIA</h1>
-    </div>
-    <div>
-      <div class="experience-item">
-        <div>
-          <h3>HTML</h3>
-          <p class=".font-sans-pro">Cursado em HTML 5 e ainda em aprendizado.</p>
-          <h2>2021 - 2022</h2>
-        </div>
-        <img src="assets/svg/Grafico container 1html-grafico.svg">
-      </div>
-      <div class="experience-item">
-        <div>
-          <h3>CSS</h3>
-          <p class=".font-sans-pro">Cursado em CSS3 no nível intermediario</p>
-          <h2>2021 - 2022</h2>
-        </div>
-        <img src="assets/svg/css-grafico.svg">
-      </div>
-      <div class="experience-item">
-        <div>
-          <h3>JavaScript</h3>
-          <p class=".font-sans-pro">Cursado em JavaScript e estu no nível básico.</p>
-          <h2>2022</h2>
-        </div>
-        <img src="assets/svg/js grafico.svg">
-      </div>
-      <div class="experience-item">
-        <div>
-          <h3>WEB DESIGN</h3>
-          <p class=".font-sans-pro">Cursado em Web Design intermediario & indo ao avançado.</p>
-          <h2>2022</h2>
-        </div>
-        <img src="assets/svg/web design grafico.svg">
-      </div>
-    </div>
-  </section>
-  <section class="certificados" id="certificados">
-    <h1 class="font-sans-pro">Certificados <span class="contrast-cian">.</span></h1>
-    <div class="certificates">
-      <div class="all-certificados">
-        <div class="certificate-item" certificate="assets/png/webdesign-certificado.apng">
-          <div>
-            <p class="date font-roboto">2022</p>
-            <div class="description">
-              <h1 class="font-sans-pro">JS - Iniciante</h1>
-              <p class="font-sans-code">Curso grátis de JS onde aprendemos o básico da linguagem.</p>
-            </div>
+    <div class="category">
+      <section class="laItem">
+        <h1>Ladino.dev</h1>
+        <p>Desenvolvedor com foco em front-end, porem que sabe algumas migalhas de back-end </p>
+      </section>
+      <section class="laItem" id="sobre">
+        <h1><span>//</span> Sobre mim</h1>
+        <p>Sou um desenvolvedor e entusiasta na programação, tenho foco em sites, porem realizo outros tipos de serviços. Atuo na área de desenvolvimento a 2 anos, porem comecei com desenvolvimento web a 6 meses.</p>
+      </section>
+      <section class="laItem" id="experiencia">
+        <h1><span>//</span> Experiência</h1>
+        <div class="progressBar">
+          <h3>JS</h3>
+          <div class="maxProgress">
+            <div data-progress="50%" class="yourProgress"></div>
           </div>
         </div>
 
-        <div class="certificate-item" certificate="assets/png/webdesign-certificado.png">
-          <div>
-            <p class="date font-roboto">2022</p>
-            <div class="description">
-              <h1 class="font-sans-pro">WEB DESIGN - Iniciante</h1>
-              <p class="font-sans-code">Um curso pago onde aprendi muito sobre web design, o nível básico.</p>
-            </div>
+        <div class="progressBar">
+          <h3>HTML</h3>
+          <div class="maxProgress">
+            <div data-progress="85%" class="yourProgress"></div>
           </div>
         </div>
-      </div>
-      <div class="certificado-selecionado">
-        <h1 class="font-sans-pro">Certificado</h1>
-        <img src="assets/png/webdesign-certificado.png" id="certificado0">
-      </div>
-    </div>
+
+        <div class="progressBar">
+          <h3>CSS</h3>
+          <div class="maxProgress">
+            <div data-progress="75%" class="yourProgress"></div>
+          </div>
+        </div>
+        <div class="progressBar">
+          <h3>PHP</h3>
+          <div class="maxProgress">
+            <div data-progress="84%" class="yourProgress"></div>
+          </div>
+        </div>
+      </section>
+      <section class="laItem" id="cursos">
+        <h1><span>//</span> Cursos</h1>
+        <p>Já fiz alguns cursos pagos e grátis, são eles: <span>Js</span>, <span>html</span>, <span>Web Design</span>.</p>
+      </section>
+
+      <section class="laItem-banner">
+        <h1><span>//</span> Cursos</h1>
+        <p>Veja aqui algumas das minhas “Redes sociais” abaixo.</p>
+        <div>
+          <a href=""><img src="" alt=""></a>
+          <a href=""><img src="" alt=""></a>
+          <a href=""><img src="" alt=""></a>
+        </div>
+      </section>
+
+      <footer>
+        <h6>Feito com 🤍 em por Ladino.</h6>
+        <p>Caso queira algum serviço me mande um pedido de amizade no discord</p>
+      </footer>
   </section>
-  <section class="contato" id="contato">
-    <div class="sociais">
-      <h1 class="font-sans-pro">Redes sociais<span class="contrast-cian">.</span></h1>
-      <p class="font-sans-code">Veja aqui algumas das minhas “Redes sociais” abaixo.</p>
-      <div class="redessociais">
-        <a href="https://discordapp.com/users/668849866805477398"><img src="assets/svg/discord.svg"></a>
-        <a href="https://github.com/LadinoXx"><img src="assets/svg/github.svg"></a>
-        <a href="https://twitter.com/LadinoXx?t=PBfsKLirprhjlTj_Lbjq6Q&s=09"><img src="assets/svg/twitter.svg"></a>
-      </div>
-  </section>
-  <hr class="espacamento">
-  <footer>
-    <p>Ladino. Quase todos os direitos reservados.</p>
-  </footer>
-  <script src="js/main.js"></script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
