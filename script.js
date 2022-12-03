@@ -36,7 +36,6 @@ function initNavbar() {
   const header = document.querySelector("header");
   const allLinksNavbar = document.querySelectorAll("header ul a");
   const ulNavbar = document.querySelector("header ul");
-  ulNavbar.style.height = document.body.clientHeight + "px";
   allLinksNavbar.forEach((Link) => {
     Link.addEventListener("click", closeNavbar);
   });
@@ -45,11 +44,13 @@ function initNavbar() {
     header.classList.add("open");
     scrollTo(0, 0);
     document.body.style.overflow = "hidden";
+    ulNavbar.style.height = document.body.clientHeight + "px";
   }
 
   function closeNavbar() {
     header.classList.remove("open");
     document.body.style.overflow = "auto";
+    ulNavbar.style.height = "auto";
   }
 
   function handleNavbar() {

@@ -77,7 +77,6 @@ header ul a {
   color: var(--cinza-color-5);
   font-family: "IBM Plex Mono", sans-serif;
   transition: 0.5s color;
-  font-size: 20px !important;
 }
 
 header ul a:hover {
@@ -124,6 +123,10 @@ header label {
   header.open ul {
     visibility: visible;
     width: 60%;
+  }
+
+  header ul a {
+    font-size: 20px !important;
   }
 }
 
