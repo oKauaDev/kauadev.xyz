@@ -1,0 +1,137 @@
+header {
+  padding: 1.63rem 5%;
+}
+
+.container header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container header nav > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container header nav .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.container header nav .navbar a {
+  padding: 0.5rem 1rem;
+  color: var(--secundary-color-1);
+  font-family: "IBM Plex Mono";
+  font-size: 1.25rem;
+  display: block;
+  transition: 0.5s;
+}
+
+.container header nav .navbar a:hover {
+  color: var(--primary-color-7);
+}
+
+.container header nav .navbar a::after {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    90deg,
+    #1c579c 0%,
+    rgba(28, 87, 156, 0.05) 102.86%
+  );
+  width: 0;
+  height: 1px;
+  transition: 0.5s;
+}
+
+.container header nav .navbar a:hover::after {
+  width: 80%;
+}
+
+.container header nav img {
+  cursor: pointer;
+}
+
+/* Responsivo */
+label[data-menu-hamburguer] {
+  width: 12px;
+  display: block;
+  color: var(
+    --secundary-color-1
+  ); /* Altere a cor aqui para mudar em todo menu */
+  border-top: 1px solid currentColor;
+
+  display: none;
+}
+
+label[data-menu-hamburguer]::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  margin: 5px 0;
+  display: block;
+  background: currentColor;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+label[data-menu-hamburguer]::after {
+  content: "";
+  width: 12px;
+  height: 1px;
+  display: block;
+  position: relative;
+  background: currentColor;
+  transition: transform 0.5s;
+}
+
+@media (max-width: 750px) {
+  .container header nav .navbar {
+    transition: 0.5s;
+    visibility: hidden;
+    width: 0px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--secundary-color-16);
+    padding-top: 3rem;
+    height: 100%;
+    overflow-x: hidden;
+    opacity: 0;
+  }
+
+  label[data-menu-hamburguer] {
+    display: block;
+  }
+
+  .container header.open nav .navbar {
+    visibility: visible;
+    width: 60vw;
+    opacity: 1;
+  }
+
+  .container header nav .navbar a {
+    margin-left: 5%;
+    width: 40%;
+    max-width: 160px;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .container header.open label[data-menu-hamburguer] {
+    border-top: none;
+  }
+
+  .container header.open label[data-menu-hamburguer]::before {
+    width: 20px;
+    transform: rotate(45deg);
+  }
+
+  .container header.open label[data-menu-hamburguer]::after {
+    width: 20px;
+    transform: rotate(-45deg);
+    top: -6px;
+  }
+}

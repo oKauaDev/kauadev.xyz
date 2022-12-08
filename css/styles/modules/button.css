@@ -1,0 +1,43 @@
+.button-style {
+  text-transform: uppercase;
+  color: var(--primary-color-2);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  box-sizing: border-box;
+  border: 2px solid var(--primary-color-10);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 1s;
+  text-align: center;
+  background: transparent;
+}
+
+body.white .button-style {
+  color: var(--primary-color-10);
+}
+
+.button-style::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-escuro);
+  display: block;
+  position: relative;
+  bottom: -18px;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+
+.button-style:hover::after {
+  width: 0px;
+}
+
+.button-style:hover {
+  border: 2px solid var(--primary-color-10);
+  background: var(--primary-color-10);
+}
+
+body.white .button-style:hover {
+  color: var(--primary-color-1);
+}

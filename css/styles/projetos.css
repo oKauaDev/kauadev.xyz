@@ -1,0 +1,108 @@
+section.projetos {
+  background: var(--secundary-color-14);
+}
+
+section.projetos > h1 {
+  letter-spacing: 0.01em;
+  font-size: 3rem;
+  color: var(--secundary-color-1);
+  text-align: center;
+}
+
+section.projetos > h1::before {
+  content: "";
+  width: 55px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 12px;
+  background: url(../../assets/decorator.svg) no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 603px) {
+  section.projetos > h1::before {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+section.projetos p {
+  color: var(--secundary-color-4);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+section.projetos p a {
+  color: var(--primary-color-6);
+  text-decoration: underline;
+}
+
+.yourProjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 44px;
+}
+
+.yourProjects .projeto {
+  width: 50%;
+  min-width: 250px;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.yourProjects .projeto > div {
+  padding: 20px 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.yourProjects .projeto:hover > div {
+  visibility: visible;
+  opacity: 1;
+}
+
+.yourProjects .projeto div > h1 {
+  font-size: 3rem;
+  color: var(--primary-color-1);
+  margin-bottom: 8px;
+  line-height: 3rem;
+}
+
+.yourProjects .projeto div > p {
+  color: var(--primary-color-2);
+  font-size: 1rem;
+  line-height: 1.38rem;
+}
+
+.yourProjects .projeto div {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.yourProjects .projeto h1,
+.yourProjects .projeto p {
+  text-align: center;
+}
+
+@media (max-width: 250px) {
+  .yourProjects .projeto {
+    width: 100%;
+    min-width: 0px;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .yourProjects .projeto div > h1 {
+    font-size: 2rem;
+  }
+
+  .yourProjects .projeto div > p {
+    font-size: 1rem;
+  }
+}

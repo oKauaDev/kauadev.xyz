@@ -1,0 +1,19 @@
+section.oqueeuaprendi {
+  margin-top: 0px;
+}
+
+.oqueeuaprendi h1 {
+  letter-spacing: 0.01em;
+  font-size: 3rem;
+  color: var(--secundary-color-1);
+  text-align: center;
+}
+
+.oqueeuaprendi > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 16px;
+}

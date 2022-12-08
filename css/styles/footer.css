@@ -1,0 +1,10 @@
+footer {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.63rem;
+  color: var(--secundary-color-1);
+  margin-bottom: 60px;
+}

@@ -6,91 +6,116 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- importar fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Importar fontes -->
 
-  <title>Ladino.dev</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+
+  <title>Kauã - Portifolio</title>
 </head>
 
-<body>
-  <header>
-    <a href="/"><img src="assets/LADINO.svg" alt="LADINO"></a>
-    <label></label>
-    <ul>
-      <li><a href="#cursos" data-baseText=".cursos">.cursos</a></li>
-      <li><a href="#experiencia" data-baseText=".experiência">.experiência</a></li>
-      <li><a href="#sobre" data-baseText=".sobre">.sobre</a></li>
-    </ul>
-  </header>
-
-  <section class="container">
-    <div class="lineDecoration">
-      <label class="line"></label>
-    </div>
-    <div class="category">
-      <section class="laItem">
-        <h1>Ladino.dev</h1>
-        <p>Desenvolvedor com foco em front-end, porem que sabe algumas migalhas de back-end </p>
-      </section>
-      <section class="laItem" id="sobre">
-        <h1><span>//</span> Sobre mim</h1>
-        <p>Sou um desenvolvedor e entusiasta na programação, tenho foco em sites, porem realizo outros tipos de serviços. Atuo na área de desenvolvimento a 2 anos, porem comecei com desenvolvimento web a 6 meses.</p>
-      </section>
-      <section class="laItem" id="experiencia">
-        <h1><span>//</span> Experiência</h1>
-        <div class="progressBar">
-          <h3>JS</h3>
-          <div class="maxProgress">
-            <div data-progress="50%" class="yourProgress"></div>
-          </div>
-        </div>
-
-        <div class="progressBar">
-          <h3>HTML</h3>
-          <div class="maxProgress">
-            <div data-progress="85%" class="yourProgress"></div>
-          </div>
-        </div>
-
-        <div class="progressBar">
-          <h3>CSS</h3>
-          <div class="maxProgress">
-            <div data-progress="75%" class="yourProgress"></div>
-          </div>
-        </div>
-        <div class="progressBar">
-          <h3>PHP</h3>
-          <div class="maxProgress">
-            <div data-progress="84%" class="yourProgress"></div>
-          </div>
-        </div>
-      </section>
-      <section class="laItem" id="cursos">
-        <h1><span>//</span> Cursos</h1>
-        <p>Já fiz alguns cursos pagos e grátis, são eles: <span>Js</span>, <span>html</span>, <span>Web Design</span>.</p>
-      </section>
-
-      <section class="laItem-banner">
-        <h1><span>//</span> Cursos</h1>
-        <p>Veja aqui algumas das minhas “Redes sociais” abaixo.</p>
+<body class="black">
+  <div class="container">
+    <header>
+      <nav>
+        <img src="assets/black/Logo.svg" alt="" class="icon">
         <div>
-          <a href=""><img src="" alt=""></a>
-          <a href=""><img src="" alt=""></a>
-          <a href=""><img src="" alt=""></a>
+          <label data-menu-hamburguer=""></label>
+          <ul class="navbar">
+            <li><a href="#sobremim">Sobre mim</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+          <img src="assets/black/themeSelector.svg" data-theme alt="">
         </div>
-      </section>
+      </nav>
+    </header>
 
-      <footer>
-        <h6>Feito com 🤍 em por Ladino.</h6>
-        <p>Caso queira algum serviço me mande um pedido de amizade no discord</p>
-      </footer>
-  </section>
+    <section class="apresentacao">
+      <img src="assets/myPhoto.png" alt="">
+      <div>
+        <h3>Olá,</h3>
+        <h1 data-title-cartoon>Meu nome é Kauã e sou desenvolvedor Web.</h1>
+        <a href="" class="button-style">quero um orçamento</a>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section class="sobremim" id="sobremim">
+      <h1>Sobre minha pessoa.</h1>
+      <p class="sobremim">Sou desenvolvedor front end, tenho 16 anos e moro em Minas Gerais, sei PHP, HTMl, CSS & JS. Tenho foco principal em front end, porem também consigo desenvolver algumas coisas no back end usando o PHP.</p>
+      <a href="" class="button-style">baixar cv</a>
+      <p class="sobrecv">Sv nada mais é do que um Curriculum Vitae, esse documento contém, todos os dados da formação escolar e profissional de uma pessoa.</p>
+    </section>
+
+    <section class="oqueeuaprendi">
+      <h1>Tudo que aprendi nesse ramo</h1>
+      <div>
+        <img src="assets/css 1.svg" alt="">
+        <img src="assets/figma 1.svg" alt="">
+        <img src="assets/html 1.svg" alt="">
+        <img src="assets/javascript 1.svg" alt="">
+        <img src="assets/php-1-logo-svgrepo-com 1.svg" alt="">
+      </div>
+    </section>
+
+    <section class="projetos">
+      <h1>Meus projetos.</h1>
+      <p>Tenho mais projetos sem ter relações com sites, como plugins para o sorftware Poketmine-MP (EM PHP), você pode conferir tudo no meu <a href="https://github.com/LadinoXx">github</a>.</p>
+
+      <div class="yourProjects">
+        <div class="projeto" src="assets/iryonProject.png">
+          <div>
+            <h1>Irion</h1>
+            <p>Otimize seu site, e deixe ele com mais velocidade ao carregar, e criptografado.</p>
+          </div>
+        </div>
+
+        <div class="projeto" src="assets/ProfileView.png">
+          <div>
+            <h1>ProfileView</h1>
+            <p>Um site onde você pode visualizar seu perfil no servidor.</p>
+          </div>
+        </div>
+
+        <div class="projeto" src="assets/CloudKode.png">
+          <div>
+            <h1>CloudKode</h1>
+            <p>O primeiro site que fiz, um site onde você faz encomendas de sites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato">
+      <div class="apps">
+        <h1>Aplicativos.</h1>
+        <span><img src="assets/github (3) 1.svg"> <a href="https://github.com/LadinoXx">LadinoXx</a></span>
+        <span><img src="assets/twitter (1) 1.svg"> <a href="https://twitter.com/LadinoXx">LadinoXx</a></span>
+        <span><img src="assets/linkedin 1.svg"> <a href="">LadinoXx</a></span>
+        <span><img src="assets/envelope 1.svg"> <a href="mailto:kauacomtil021@gmail.com">kauacomtil021@gmail.com</a></span>
+        <span><img src="assets/discord (1) 1.svg"> <a href="https://discordapp.com/users/668849866805477398">LADINO#0063</a></span>
+      </div>
+      <div class="decorator">
+        <div class="decaracao"></div>
+      </div>
+      <div class="form">
+        <h1>Formulário.</h1>
+        <form action="">
+          <input type="text" name="nome" placeholder="Nome: ">
+          <input type="email" name="email" placeholder="Email: ">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem: "></textarea>
+          <button type="submit" class="button-style" data-popup-create aria-label="Formulãrio não disponível, pois o site está hospedado no github">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>Kauã. Todos os direitos reservados</footer>
+  </div>
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

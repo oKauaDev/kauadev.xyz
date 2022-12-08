@@ -1,0 +1,99 @@
+.contato {
+  display: grid;
+  grid-template-columns: 1.4fr 20px 1.5fr;
+}
+
+.contato .apps h1 {
+  font-size: 3rem;
+  color: var(--secundary-color-1);
+  letter-spacing: 0.01em;
+}
+
+.contato .apps span {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.contato .apps a {
+  letter-spacing: 0.01em;
+  color: var(--secundary-color-2);
+}
+
+.contato .decorator {
+  display: flex;
+  justify-content: center;
+}
+
+.contato .decaracao {
+  background: var(--secundary-color-13);
+  border-radius: 5px 0px;
+  width: 8px;
+  height: 70%;
+}
+
+.contato .form {
+  margin-left: 10%;
+}
+
+.contato .form > h1 {
+  letter-spacing: 0.01em;
+  font-size: 3rem;
+  color: var(--secundary-color-1);
+}
+
+.contato .form > h1::before {
+  content: "";
+  width: 55px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 12px;
+  background: url(../../assets/decorator.svg) no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 603px) {
+  section.projetos > h1::before {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.contato .form input,
+.contato .form textarea {
+  background: var(--secundary-color-13);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  min-height: 30px;
+  width: 80%;
+  margin-bottom: 20px;
+  color: var(--secundary-color-4);
+}
+
+@media (max-width: 800px) {
+  .contato {
+    display: block;
+  }
+
+  .contato .apps {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .contato .apps span {
+    max-width: min-content;
+    margin: 10px auto;
+  }
+
+  .contato .form {
+    margin-left: 0px;
+  }
+
+  .contato .form > * {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
