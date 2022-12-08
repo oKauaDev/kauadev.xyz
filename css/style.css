@@ -8,6 +8,10 @@
 @import url("styles/modules/button.css");
 @import url("styles/modules/letterCartoon.css");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --primary-color-1: #fbfdfe;
   --primary-color-2: #edf6fb;
@@ -73,6 +77,19 @@ body.white {
   --secundary-color-3: #1c1c1c;
   --secundary-color-2: #0e0e0e;
   --secundary-color-1: #070707;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--secundary-color-15);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: var(--gradient-escuro);
+  border-radius: 2px;
 }
 
 * {

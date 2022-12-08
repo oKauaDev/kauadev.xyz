@@ -15,7 +15,7 @@
   color: var(--secundary-color-5);
 }
 
-.apresentacao h1 {
+.apresentacao h1 span {
   width: 90%;
   max-width: 590px;
   margin-top: 4px;
