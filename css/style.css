@@ -2,6 +2,7 @@
 @import url("styles/apresentacao.css");
 @import url("styles/sobremim.css");
 @import url("styles/oquesei.css");
+@import url("styles/animation.css");
 @import url("styles/contato.css");
 @import url("styles/projetos.css");
 @import url("styles/footer.css");
@@ -39,6 +40,8 @@ body {
   );
 
   --gradient-claro: linear-gradient(180deg, #0e7af8 0%, #0450a8 99.99%);
+
+  overflow-x: hidden;
 }
 
 body.black {

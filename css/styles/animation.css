@@ -1,0 +1,25 @@
+[data-anime] {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-100px, 0px, 0px) !important;
+}
+
+[data-anime="right"] {
+  transform: translate3d(100px, 0px, 0px) !important;
+}
+
+[data-anime="top"] {
+  transform: translate3d(0px, -100px, 0px) !important;
+}
+
+[data-anime="bottom"] {
+  transform: translate3d(0px, 100px, 0px) !important;
+}
+
+[data-anime].ativo {
+  transform: translate3d(0px, 0px, 0px) !important;
+  opacity: 1 !important;
+}

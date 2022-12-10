@@ -36,8 +36,3 @@ export default function initTheme() {
   const themeSelector = document.querySelector("[data-theme]");
   themeSelector.addEventListener("click", themeAlter);
 }
-
-/*
- 0 - white
- 1 - black
-*/
