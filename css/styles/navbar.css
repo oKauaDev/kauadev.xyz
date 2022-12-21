@@ -100,6 +100,7 @@ label[data-menu-hamburguer]::after {
     height: 100%;
     overflow-x: hidden;
     opacity: 0;
+    z-index: 1000;
   }
 
   label[data-menu-hamburguer] {
