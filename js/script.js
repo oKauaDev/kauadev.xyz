@@ -1,13 +1,29 @@
-import initNavbar from "./modules/navbar.js";
-import initCartoonTitle from "./modules/titleCartoon.js";
-import initdivbackgroudImage from "./modules/divBackgroudImage.js";
-import initPopusModal from "./modules/popup.js";
-import initTheme from "./modules/theme.js";
-import initAnimation from "./modules/animation.js";
+import NavBar from "./modules/Navbar.js";
+import ScrollAnime from "./modules/ScrollAnime.js";
+import Slide from "./modules/Slide.js";
+import typewriter from "./modules/typewriter.js";
 
-initNavbar();
-initCartoonTitle();
-initdivbackgroudImage();
-initPopusModal();
-initTheme();
-initAnimation();
+const navbar = new NavBar("header nav", "[data-mobile-menu]");
+navbar.init();
+
+typewriter("header > p").write();
+
+const slide = new Slide(".scroll-container", ".scroll-container .scroll");
+slide.init();
+
+const scrollAnime = new ScrollAnime("[data-animeScroll]");
+scrollAnime.init();
+
+const dino = document.querySelector(".dinossauro");
+const cafe = document.querySelector(".cafe");
+scrollAnime.checkPosOnTop(
+  dino,
+  () => {
+    cafe.classList.add("ativo");
+  },
+  () => {
+    if (cafe.classList.contains("ativo")) {
+      cafe.classList.remove("ativo");
+    }
+  }
+);

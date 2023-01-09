@@ -1,28 +1,33 @@
-export default function initNavbar() {
-  const header = document.querySelector(".container header");
-  const button = document.querySelector("[data-menu-hamburguer]");
-  const links = document.querySelectorAll("ul.navbar li a");
+export default class navBar {
+  constructor(listNav, buttonNav) {
+    this.listNav = document.querySelector(listNav);
+    this.buttonNav = document.querySelector(buttonNav);
 
-  function toggleNavbar() {
-    header.classList.toggle("open");
-
-    if (header.classList.contains("open")) {
-      scrollTo(0, 0);
-      document.body.style.overflowY = "hidden";
-    } else document.body.style.overflowY = "auto";
+    this.open = this.open.bind(this);
+    this.close = this.close.bind(this);
+    this.toggle = this.toggle.bind(this);
   }
 
-  function closeOnAirClick(event) {
-    if (header.classList.contains("open")) {
-      if (event.target.tagName != "UL" && event.target.tagName != "LABEL") {
-        toggleNavbar();
-      }
+  open() {
+    this.listNav.classList.add("open");
+    document.body.style.overflow = "hidden";
+    window.scroll(0, 0);
+  }
+
+  close() {
+    this.listNav.classList.remove("open");
+    document.body.style.overflow = "auto";
+  }
+
+  toggle() {
+    if (this.listNav.classList.contains("open")) {
+      this.close();
+    } else {
+      this.open();
     }
   }
 
-  button.addEventListener("click", toggleNavbar);
-  addEventListener("click", closeOnAirClick);
-  links.forEach((Item) => {
-    Item.addEventListener("click", toggleNavbar);
-  });
+  init() {
+    this.buttonNav.addEventListener("click", this.toggle);
+  }
 }
