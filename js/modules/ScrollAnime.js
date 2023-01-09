@@ -16,7 +16,6 @@ export default class ScrollAnime {
 
     const checkOnTopKeys = Object.keys(this.checkOnTop);
     checkOnTopKeys.forEach((item) => {
-      console.log(this.checkOnTop[item].element.offsetTop, window.scrollY);
       if (this.checkOnTop[item].element.offsetTop < window.scrollY) {
         this.checkOnTop[item].toTopcallback();
       } else {

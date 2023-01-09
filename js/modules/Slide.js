@@ -95,16 +95,16 @@ export default class Slide {
     this.wrepper.removeEventListener("touchend", this.onUp);
     this.save.finalPos = this.save.moveFinalPos;
 
-    let mouseMoved = window.innerWidth - window.innerWidth / 1.5;
-
+    let mouseMoved = window.innerWidth - window.innerWidth / 1.1;
     if (mouseMoved > 200) {
       mouseMoved = 200;
     }
-
     if (this.save.clickPosition - clientX > mouseMoved) {
       this.navTo(this.preferPosition.next);
-    } else if (this.save.clickPosition - clientX < mouseMoved) {
+    } else if (this.save.clickPosition - clientX < -mouseMoved) {
       this.navTo(this.preferPosition.prev);
+    } else {
+      this.navTo(this.preferPosition.actual);
     }
   }
 
