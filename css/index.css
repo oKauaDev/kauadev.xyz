@@ -186,6 +186,11 @@ section.projetos .allprojetos .projeto .sobre p {
   color: var(--secundary-color-2);
 }
 
+section.projetos .allprojetos .projeto .sobre p a {
+  text-decoration: none;
+  color: var(--primary-color-7);
+}
+
 section.projetos .allprojetos .projeto .tec h1 {
   font-family: "Roboto";
   font-style: normal;
