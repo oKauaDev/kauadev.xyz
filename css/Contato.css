@@ -1,0 +1,26 @@
+#contato > h1 {
+  width: max-content;
+  margin: 0 auto;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 12px;
+}
+
+#contato > p {
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+#contato .redessociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}

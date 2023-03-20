@@ -6,179 +6,117 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="style.css">
 
-  <title>Kauã Braz | Desenvolvedor Front-End</title>
+  <title>Kauã Portifolio</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="/" class="icon">kaua</a>
-      <label data-mobile-menu></label>
-      <ul class="navbar">
-        <li><a href="#sobre">SOBRE</a></li>
-        <li><a href="#projetos">PROJETOS</a></li>
-        <li><a href="#certificados">CERTIFICADOS</a></li>
-        <li><a href="#contatos">CONTATO</a></li>
-      </ul>
-    </nav>
+  <div class="container">
+    <header>
+      <nav>
+        <img src="./assets/kaua-icon.svg" alt="Kauã">
+        <label class="mobile-menu"></label>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <!-- <li><button><img src="./assets/Moon.svg"></button></li> -->
+        </ul>
+      </nav>
+    </header>
 
-    <img src="assets/Svg/Frame 6.svg">
-    <p>DESENVOLVEDOR FRONT END</p>
-  </header>
+    <section class="spacing" id="inicio" join-animation="left">
+      <h3 class="title-separator">Prazer, meu nome é</h3>
+      <h1>Kauã Braz</h1>
+      <p>Oi! Sou um desenvolvedor com foco em Front-End, mas também sei um pouco de back-end com PHP. Minha paixão é criar interfaces incríveis e fáceis de usar para os usuários.</p>
+      <span></span>
+      <a href="" class="button">
+        Github
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 8.50001C4 8.63261 4.05268 8.75979 4.14645 8.85356C4.24021 8.94733 4.36739 9.00001 4.5 9.00001H10.293L8.146 11.146C8.09951 11.1925 8.06263 11.2477 8.03748 11.3084C8.01232 11.3692 7.99937 11.4343 7.99937 11.5C7.99937 11.5658 8.01232 11.6309 8.03748 11.6916C8.06263 11.7523 8.09951 11.8075 8.146 11.854C8.19249 11.9005 8.24768 11.9374 8.30842 11.9625C8.36915 11.9877 8.43425 12.0006 8.5 12.0006C8.56574 12.0006 8.63084 11.9877 8.69158 11.9625C8.75232 11.9374 8.80751 11.9005 8.854 11.854L11.854 8.85401C11.9006 8.80756 11.9375 8.75238 11.9627 8.69164C11.9879 8.63089 12.0009 8.56577 12.0009 8.50001C12.0009 8.43424 11.9879 8.36912 11.9627 8.30837C11.9375 8.24763 11.9006 8.19245 11.854 8.14601L8.854 5.14601C8.76011 5.05212 8.63277 4.99937 8.5 4.99937C8.36722 4.99937 8.23989 5.05212 8.146 5.14601C8.05211 5.23989 7.99937 5.36723 7.99937 5.50001C7.99937 5.63278 8.05211 5.76012 8.146 5.85401L10.293 8.00001H4.5C4.36739 8.00001 4.24021 8.05268 4.14645 8.14645C4.05268 8.24022 4 8.3674 4 8.50001Z" fill="currentColor" />
+        </svg>
+      </a>
+    </section>
 
-  <section class="sobremim grid-container-2" id="sobre">
-    <div class="container1">
-      <h1 data-animeScroll="top">quem sou eu ?</h1>
-      <p data-animeScroll="top">Olá, meu nome é Kauã e sou desenvolvedor de front-end. Gostaria de compartilhar minha jornada na área de programação. Comecei a me interessar por essa área aos 14 anos, quando comecei a trabalhar como desenvolvedor PHP no software Pocketmine-MP. Durante esse período, tive a oportunidade de adquirir experiência e habilidades valiosas. Após dois anos, decidi me concentrar no desenvolvimento de front-end, onde venho estudando e me especializando há um ano. Estou ansioso para continuar minha jornada e desenvolver minhas habilidades nesta área crescente e emocionante.</p>
-    </div>
-    <div class="container2">
-      <h1 class="decoration-title">SO<br>BR<br>E</h1>
-    </div>
-  </section>
-
-  <section class="projetos grid-container-2" id="projetos">
-    <div class="allprojetos">
-      <div class="projeto" data-animeScroll="left">
-        <div class="sobre">
-          <h1>VIEW</h1>
-          <p>Otimize seu site
-            de um jeito extremamente
-            fácil.</p>
-        </div>
-        <div class="tec">
-          <h1>TEC.</h1>
-          <div>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JS</p>
-            <p>WEB DESIGN</p>
-            <p>PHP</p>
+    <section class="spacing" id="sobre">
+      <div class="github" join-animation="left" animeStatus>
+        <div class="background"></div>
+        <div class="content">
+          <img src="./assets/photo.png" alt="">
+          <h3>Kauã Braz</h3>
+          <h5>@oKauaDev</h5>
+          <p>Sou um desenvolvedor front-end júnior com conhecimento em frameworks como React e Vue.js, sempre disposto a aprender mais</p>
+          <div class="status">
+            <div>
+              <h1 id="seguidores">0</h1>
+              <p>Seguidores</p>
+            </div>
+            <div>
+              <h1 id="seguindo">0</h1>
+              <p>Seguindo</p>
+            </div>
+            <div>
+              <h1 id="repo">0</h1>
+              <p>Repositórios</p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="separator"></div>
+      <div class="sobreinfo" join-animation="right">
+        <h1 class="title-separator">Sobre</h1>
+        <p>
+          Ei, eu sou um desenvolvedor front-end, especialista em criar telas lindas e funcionais que vão te deixar de queixo caído.
+          <br><br>
+          Meu foco é em front-end porem também tenho algumas habilidades em PHP e consigo criar um back-end com API REST. Não é muita coisa, mas já ajuda bastante, né?
+          <br><br>
+          Ah, e se você estiver procurando por um desenvolvedor front-end para o seu projeto, é só dar um grito! Estou sempre em busca de desafios novos e interessantes. E, claro, se você quiser bater um papo sobre o último episódio de sua série favorita ou qualquer outra coisa, pode contar comigo!
+        </p>
+        <a class="button" href="">BAIXAR CV</a>
+      </div>
+    </section>
 
+    <section class="spacing" id="skills">
+      <div>
+        <h1 class="title-separator" join-animation="top">Minhas Habilidades</h1>
+        <p join-animation="top">Tenho habilidades em design, user experience e programação front-end (especialmente programação!). Li livros e fiz cursos para aprimorar minhas habilidades nesta área. Se você precisa de alguém com expertise em front-end, conte comigo!</p>
 
-      <div class="projeto" data-animeScroll="left">
-        <div class="sobre">
-          <h1>ProfileView</h1>
-          <p>Um site onde você pode visualizar seu perfil no servidor.</p>
-        </div>
-        <div class="tec">
-          <h1>TEC.</h1>
-          <div>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JS</p>
-            <p>PHP</p>
-          </div>
+        <div class="skills" join-animation="top"></div>
+      </div>
+      <img src="./assets/Skills-Decorations.svg">
+    </section>
+
+    <section class="spacing" id="projetos">
+      <h1 class="title-separator" join-animation="left">Meus Projetos</h1>
+      <div class="filter" join-animation="left">
+        <img id="img-filter" src="./assets/filter.svg">
+        <button id="todos" query="*">TODOS</button>
+        <button id="front" query="front">FRONT-END</button>
+        <button id="back" query="back">BACK-END</button>
+      </div>
+      <div class="projetos"></div>
+    </section>
+
+    <section id="contato" class="spacing">
+      <h1 class="title-separator" join-animation="top">Entre em contato</h1>
+      <p join-animation="top">Vamos tomar um café juntos? Entre em contato comigo e a primeira xícara é por minha conta!</p>
+      <div>
+        <div class="redessociais">
+          <a href=""><img src="./assets/github.svg"></a>
+          <a href=""><img src="./assets/linkedin.svg"></a>
+          <a href=""><img src="./assets/discord.svg"></a>
+          <a href=""><img src="./assets/twitter.svg"></a>
         </div>
       </div>
+    </section>
 
-      <div class="projeto final" data-animeScroll="left">
-        <div class="sobre">
-          <h1>Ranek</h1>
-          <p>Um <a href="http://ranek.kauadev.xyz">site</a> simples feito para meu aprendizado em Vue.js (sem responsividade)</p>
-        </div>
-        <div class="tec">
-          <h1>TEC.</h1>
-          <div>
-            <p>VueJS</p>
-            <p>PHP</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="dinossauro">
-      <svg width="507" height="498" viewBox="0 0 507 498" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_11_4)">
-          <path d="M278.85 323.034C278.85 323.034 238.29 337.471 214.968 327.514C191.646 317.558 183.027 296.152 183.534 276.737" stroke="#005BC5" stroke-width="28.7868" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M353.372 372.706C381.158 381.012 408.315 372.974 419.855 368.86C422.616 367.81 425.249 370.29 424.214 373.157C404.602 430.183 296.914 420.382 292.569 421.668L353.372 372.706Z" fill="#005BC5" />
-          <path d="M281.855 466.175C283.769 455.596 289.003 432.996 295.565 414.724C299.231 405.107 294.425 396.933 284.731 395.49C276.046 394.047 265.874 399.818 261.092 407.992L227.25 464.732C224.674 468.579 226.639 472.426 231.18 472.426H273.568C277.472 472.907 280.793 470.022 281.855 466.175V466.175Z" fill="#005BC5" />
-          <path d="M242.96 238.959L227.252 238.641L233.041 252.208C233.515 253.712 236.048 253.763 236.588 252.279L242.96 238.959V238.959Z" fill="#E7EDF1" />
-          <path d="M340.771 262.85C336.438 252.303 335.264 236.341 335.653 218.418C336.452 181.578 345.046 135.93 348.68 108.609C350.471 96.194 342.624 84.0818 330.023 80.8388C316.408 77.5753 296.747 72.6954 275.522 69.7761C220.935 62.6962 150.437 64.758 115.864 116.356C106.442 130.112 73.3985 204.652 107.946 224.276C135.993 239.785 230.691 243.691 260.152 240.8C258.2 260.683 200.732 292.892 199.479 350.642C198.495 395.946 236.728 432.579 283.339 433.521C330.456 434.473 369.782 397.415 370.787 351.116C371.586 314.275 348.951 282.938 340.771 262.85V262.85Z" fill="#359DE9" />
-          <path d="M245.948 241.541C291.55 242.961 311.543 232.899 317.496 215.576" stroke="#002C58" stroke-width="2.39796" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M245.954 241.516L253.738 256.618C254.719 258.132 257.252 258.183 258.298 256.71L264.66 243.887L265.727 241.418L245.954 241.516V241.516Z" fill="#E7EDF1" />
-          <path d="M273.711 199.672C281.545 199.828 287.991 195.628 288.109 190.292C288.227 184.956 281.971 180.504 274.137 180.348C266.303 180.192 259.856 184.392 259.738 189.728C259.62 195.064 265.876 199.516 273.711 199.672Z" fill="#002C58" />
-          <path d="M279.504 189.987C282.665 190.05 285.268 188.272 285.318 186.015C285.368 183.759 282.845 181.879 279.684 181.817C276.523 181.754 273.92 183.532 273.87 185.788C273.82 188.044 276.343 189.924 279.504 189.987Z" fill="#E7EDF1" />
-          <path d="M184.133 71.94C182.679 68.9216 170.479 47.7523 162.254 53.0696C154.536 58.3971 157.168 76.885 157.587 80.8794C166.285 77.0662 174.961 74.2491 184.133 71.94V71.94Z" fill="#002C58" />
-          <path d="M221.752 67.2393C219.34 61.7102 206.269 34.0448 198.098 36.8721C190.952 39.2215 186.901 62.0621 185.162 71.9933C196.877 69.2364 209.584 67.4958 221.752 67.2393V67.2393Z" fill="#002C58" />
-          <path d="M265.31 69.1351C264.451 62.1426 256.214 22.119 245.071 21.8975C233.422 21.666 223.426 61.3273 222.282 67.2835C236.991 66.5793 251.668 67.3693 265.31 69.1351V69.1351Z" fill="#002C58" />
-          <path d="M339.972 466.175C336.04 455.596 328.788 432.996 325.253 414.724C323.606 405.107 314.283 396.933 303.792 395.49C294.31 394.047 287.326 399.818 287.061 407.992L284.57 464.732C284.119 468.579 288.21 472.426 292.751 472.426H335.139C339.309 472.907 341.54 470.022 339.972 466.175V466.175Z" fill="#359DE9" />
-          <path d="M328.536 300.124C328.536 300.124 349.323 332.98 325.494 341.443C301.158 349.408 279.864 339.949 267.189 325.015" stroke="#45C4EC" stroke-width="28.7868" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-        </g>
-        <g class="cafe">
-          <path d="M193.576 258.136C190.605 256.556 187.031 256.541 184.047 257.574L184.052 256.528C183.472 253.39 182.93 242.936 136.429 249.013C89.9277 255.089 92.8527 265.553 93.4296 269.214C95.74 283.334 107.574 299.061 124.223 305.402C124.218 306.447 124.215 306.97 124.806 308.018C125.968 313.771 136.082 316.426 148.005 314.908C159.928 313.391 168.296 308.2 167.134 302.446C167.139 301.401 166.549 300.353 166.552 299.831C170.738 296.713 174.334 292.547 176.739 288.376C177.928 288.904 179.114 289.954 180.303 290.482C182.084 291.534 184.467 291.544 186.255 291.552C191.024 291.049 195.811 286.888 198.822 280.63C202.451 270.193 200.709 261.302 193.576 258.136V258.136ZM192.881 277.469C190.468 283.208 185.686 286.323 182.119 284.741C180.931 284.213 180.338 283.688 179.744 283.163C182.756 276.904 184.575 270.641 184.607 264.37C185.802 263.852 186.996 263.335 187.592 263.337C188.783 263.342 189.975 263.347 190.568 263.872C194.73 265.457 195.296 271.208 192.881 277.469V277.469Z" fill="#005BC5" />
-          <path d="M137.594 254.766C117.326 257.293 101.81 262.452 102.39 265.589C102.966 269.248 119.644 269.84 139.317 267.31C158.989 264.781 175.101 259.624 174.524 255.965C173.947 252.306 157.267 252.236 137.594 254.766V254.766Z" fill="#3E1E00" />
-        </g>
-        <defs>
-          <clipPath id="clip0_11_4">
-            <rect width="507" height="497.815" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-  </section>
+  </div>
+  <footer>Kauã Braz. Todos os direitos reservados.</footer>
 
-  <section class="certificados" id="certificados">
-    <h1>🎓 CERTIFICADOS</h1>
-    <p>Absolutamente todos os sertificados aqui estão relacionados ao desenvolvimento Front-end</p>
-    <div class="scroll-container">
-      <ul class="scroll">
-        <li><img src="./assets/PNG/js.png"></li>
-        <li><img src="./assets/PNG/csshtml.png"></li>
-        <li><img src="./assets/PNG/webdesign.png"></li>
-        <li><img src="./assets/PNG/vuejs.png"></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contato" data-animeScroll="top" id="contatos">
-    <div class="contato grid-container-2">
-      <div class="container1">
-        <!-- contato 1 -->
-        <div class="contato-list">
-          <div class="image">
-            <img src="./assets/Svg/github.svg" alt="">
-          </div>
-          <div class="infos">
-            <h1>GITHUB</h1>
-            <p>@oKauaDev</p>
-          </div>
-        </div>
-
-        <!-- contato 2 -->
-        <div class="contato-list">
-          <div class="image">
-            <img src="./assets/Svg/linkedin.svg" alt="">
-          </div>
-          <div class="infos">
-            <h1>Linkedin</h1>
-            <p>Kauã Braz</p>
-          </div>
-        </div>
-
-        <!-- contato 3 -->
-        <div class="contato-list">
-          <div class="image">
-            <img src="./assets/Svg/Discord.svg" alt="">
-          </div>
-          <div class="infos">
-            <h1>discord</h1>
-            <p>#K.5998</p>
-          </div>
-        </div>
-      </div>
-      <div class="container2">
-        <h1 class="decoration-title">CON<br>TA<br>TO</h1>
-      </div>
-    </div>
-  </section>
-
-  <footer>@Kaua - 2023. Alguns dos direitos reservados.</footer>
-
-  <script type="module" src="main.js"></script>
+  <script src="./main.js" type="module"></script>
 </body>
 
 </html>

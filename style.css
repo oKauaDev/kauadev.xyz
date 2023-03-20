@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
+@import url(./css/Navbar.css);
+@import url(./css/Inicio.css);
+@import url(./css/Sobre.css);
+@import url(./css/Skills.css);
+@import url(./css/Projetos.css);
+@import url(./css/Contato.css);
+
+:root {
+  --b-1: #8af2e1;
+  --b-2: #45e5c0;
+  --b-3: #11ddaa;
+  --b-4: #09ab7d;
+  --b-5: #036348;
+
+  --c-1: #f58273;
+  --c-2: #e54637;
+  --c-3: #dd2211;
+  --c-4: #a61008;
+  --c-5: #6e0402;
+
+  --s-1: #e4f0f0;
+  --s-2: #ccdddd;
+  --s-3: #809191;
+  --s-4: #455757;
+  --s-5: #223333;
+  --s-6: #141c1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--b-3);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+input,
+button,
+div {
+  color: var(--s-6);
+}
+
+.container {
+  padding: 3% 7%;
+}
+
+section.spacing {
+  margin-top: 15%;
+}
+
+.title-separator {
+  display: grid;
+  grid-template-columns: 0.5rem 1fr;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-separator::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--b-3);
+  display: block;
+}
+
+.button {
+  background: linear-gradient(180deg, #dd2211 0%, #a61008 100%);
+  border-radius: 5px;
+
+  text-transform: uppercase;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  font-variant: all-small-caps;
+  color: #f9d1cc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 8px 20px;
+
+  width: max-content;
+
+  transition: transform 0.4s, background 0.5s;
+
+  cursor: pointer;
+}
+
+.button > img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.button:hover {
+  background: linear-gradient(180deg, #ff2211 0%, #dd1008 100%);
+  transform: scale(1.05);
+}
+
+footer {
+  background: var(--s-6);
+  margin-top: 5%;
+  padding: 40px 0;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: var(--s-1);
+}
+
+@media (max-width: 340px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    word-wrap: break-word !important;
+    white-space: initial;
+    text-overflow: initial;
+    overflow: initial;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Parte da animação */
+[join-animation] {
+  opacity: 0;
+
+  transition: transform 0.4s, opacity 0.3s;
+}
+
+[join-animation].active {
+  opacity: initial !important;
+  transform: initial !important;
+}
+
+[join-animation="left"] {
+  transform: translate3d(-100px, 0, 0);
+}
+
+[join-animation="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+
+[join-animation="top"] {
+  transform: translate3d(0, -100px, 0);
+}
+
+[join-animation="bottom"] {
+  transform: translate3d(0, 100px, 0);
+}

@@ -1,0 +1,165 @@
+#sobre {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 1fr;
+  grid-template-areas: "github separator sobre";
+}
+
+@media (max-width: 959px) {
+  #sobre {
+    grid-template-columns: 1fr 0.2fr 1fr;
+  }
+}
+
+#sobre .github {
+  background: var(--s-6);
+  border-radius: 10px;
+  height: 85%;
+  width: 80%;
+  grid-area: "github";
+}
+
+#sobre .github img {
+  width: 125px;
+}
+
+#sobre .github .background {
+  height: 150px;
+  background: var(--b-3);
+  border-radius: 10px 10px 0px 0px;
+}
+
+#sobre .github .content {
+  text-align: center;
+  position: relative;
+  bottom: calc(150px / 2);
+  padding: 0 5%;
+}
+
+#sobre .github .content h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.23rem;
+  color: var(--s-1);
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+#sobre .github .content h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: var(--s-3);
+  margin-bottom: 16px;
+}
+
+#sobre .github .content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: var(--s-2);
+  margin-bottom: 16px;
+}
+
+#sobre .github .status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+  padding: 0 16px;
+}
+
+#sobre .github .status h1 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: var(--s-1);
+}
+
+#sobre .github .status p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  text-align: center;
+  color: var(--s-2);
+}
+
+#sobre .separator {
+  background: var(--s-2);
+  width: 2px;
+  height: 80%;
+  margin: 0 auto;
+  grid-area: "separator";
+}
+
+#sobre .sobreinfo {
+  grid-area: "sobre";
+}
+
+#sobre .sobreinfo h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: var(--s-6);
+  margin-bottom: 12px;
+}
+
+#sobre .sobreinfo p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: var(--s-5);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 845px) {
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: none;
+  }
+
+  #sobre .github {
+    max-width: 400px;
+    width: 100%;
+    max-height: 500px;
+  }
+
+  #sobre .separator {
+    background: var(--s-2);
+    width: 40%;
+    height: 2px;
+    margin: 5% auto;
+  }
+
+  #sobre .sobreinfo {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 329px) {
+  #sobre .github .status {
+    flex-direction: column;
+  }
+
+  #sobre .github {
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    max-height: 1000px;
+  }
+}
