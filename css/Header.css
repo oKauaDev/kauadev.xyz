@@ -1,0 +1,38 @@
+header {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header > nav .attalios a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--s-6);
+
+  transition: color 0.4s;
+}
+
+header > nav .attalios a:hover {
+  color: var(--b-3);
+}
+
+@media (max-width: 750px) {
+  header > nav .attalios {
+    display: none;
+  }
+}

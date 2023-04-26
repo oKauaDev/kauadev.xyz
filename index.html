@@ -6,117 +6,121 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <title>Kauã Portifolio</title>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+
+  <meta name="description" content="Sou um jovem desenvolvedor front-end com 16 anos de idade e habilidades em design e programação. Possuo experiência em JavaScript, HTML, CSS, React, Vue e um pouco de React Native. Também tenho conhecimento em PHP, o que me permite trabalhar no back-end se necessário. Com meu conhecimento técnico e criatividade em design, posso criar interfaces atraentes e funcionais para seus projetos web.">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/Header.css">
+  <link rel="stylesheet" href="./css/Init.css">
+  <link rel="stylesheet" href="./css/Sobre.css">
+  <link rel="stylesheet" href="./css/Projetos.css">
+  <link rel="stylesheet" href="./css/Contato.css">
+  <link rel="stylesheet" href="./css/Footer.css">
+  <title>Kauã Braz</title>
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <nav>
-        <img src="./assets/kaua-icon.svg" alt="Kauã">
-        <label class="mobile-menu"></label>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <!-- <li><button><img src="./assets/Moon.svg"></button></li> -->
-        </ul>
-      </nav>
-    </header>
-
-    <section class="spacing" id="inicio" join-animation="left">
-      <h3 class="title-separator">Prazer, meu nome é</h3>
-      <h1>Kauã Braz</h1>
-      <p>Oi! Sou um desenvolvedor com foco em Front-End, mas também sei um pouco de back-end com PHP. Minha paixão é criar interfaces incríveis e fáceis de usar para os usuários.</p>
-      <span></span>
-      <a href="https://github.com/oKauaDev" class="button">
-        Github
-        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 8.50001C4 8.63261 4.05268 8.75979 4.14645 8.85356C4.24021 8.94733 4.36739 9.00001 4.5 9.00001H10.293L8.146 11.146C8.09951 11.1925 8.06263 11.2477 8.03748 11.3084C8.01232 11.3692 7.99937 11.4343 7.99937 11.5C7.99937 11.5658 8.01232 11.6309 8.03748 11.6916C8.06263 11.7523 8.09951 11.8075 8.146 11.854C8.19249 11.9005 8.24768 11.9374 8.30842 11.9625C8.36915 11.9877 8.43425 12.0006 8.5 12.0006C8.56574 12.0006 8.63084 11.9877 8.69158 11.9625C8.75232 11.9374 8.80751 11.9005 8.854 11.854L11.854 8.85401C11.9006 8.80756 11.9375 8.75238 11.9627 8.69164C11.9879 8.63089 12.0009 8.56577 12.0009 8.50001C12.0009 8.43424 11.9879 8.36912 11.9627 8.30837C11.9375 8.24763 11.9006 8.19245 11.854 8.14601L8.854 5.14601C8.76011 5.05212 8.63277 4.99937 8.5 4.99937C8.36722 4.99937 8.23989 5.05212 8.146 5.14601C8.05211 5.23989 7.99937 5.36723 7.99937 5.50001C7.99937 5.63278 8.05211 5.76012 8.146 5.85401L10.293 8.00001H4.5C4.36739 8.00001 4.24021 8.05268 4.14645 8.14645C4.05268 8.24022 4 8.3674 4 8.50001Z" fill="currentColor" />
-        </svg>
-      </a>
+  <header class="container">
+    <img src="./assets/kaua braz.svg" alt="kauã braz">
+    <nav>
+      <ul class="attalios">
+        <li><a href="/">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Trabalhos</a></li>
+      </ul>
+      <ul class="socialmedia">
+        <li><a href="https://discordapp.com/users/668849866805477398"><img src="./assets/discord.svg" alt="discord"></a></li>
+        <li><a href="https://github.com/oKauaDev/oKauaDev"><img src="./assets/github.svg" alt="github"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="container">
+    <div class="init">
+      <div class="abount">
+        <div>
+          <h2>Yo! Sou</h2>
+          <p>Dev</p>
+        </div>
+        <h1>Kauã <span>Bra</span><img src="./assets/bolt.svg" alt="z"></h1>
+        <p>Designer</p>
+      </div>
+  </section>
+  <div class="coloContainer" id="sobre">
+    <section>
+      <h2 class="subtitle">O que sei fazer ?</h2>
+      <h1 class="title">Habilidades.</h1>
+      <div class="skills">
+        <div class="skill">
+          <h3>Front-end</h3>
+          <p>Como desenvolvedor front-end e designer, crio telas bonitas e responsivas com foco na experiência do usuário. Com experiência em UI e UX, posso criar designs funcionais, intuitivos e visualmente atraentes. Tenho habilidades avançadas em HTML, CSS e Javascript, além de conhecimento em linguagens e frameworks front-end como React e Vue.js.</p>
+        </div>
+        <div class="skill">
+          <h3>Back-End</h3>
+          <p>Como desenvolvedor Back-end, minha especialização é em PHP, onde já conclui diversos projetos de sucesso para desenvolvimento de sites. Através de minha vasta experiência, desenvolvi um framework personalizado que facilita a criação do back-end, incluindo integração de API REST. Além disso, estou sempre em busca de atualização e aprimoramento para oferecer soluções cada vez mais eficientes.</p>
+        </div>
+      </div>
     </section>
+    <section class="projectsContainer" id="projetos">
+      <h2 class="subtitle">quais são os meus projetos ?</h2>
+      <h1 class="title">Projetos.</h1>
+      <div class="projects">
+        <div class="project" style="background-image: url(./assets/dogs.png);">
+          <div>
+            <h3>Dogs</h3>
+            <p>Site de uma rede social para cachorro feita em ReactJS, meu primeiro projeto grande.</p>
+            <a href="https://dogs.kauadev.xyz" target="_blank">Ver site</a>
+          </div>
+        </div>
 
-    <section class="spacing" id="sobre">
-      <div class="github" join-animation="left" animeStatus>
-        <div class="background"></div>
-        <div class="content">
-          <img src="./assets/photo.png" alt="">
-          <h3>Kauã Braz</h3>
-          <h5>@oKauaDev</h5>
-          <p>Sou um desenvolvedor front-end júnior com conhecimento em frameworks como React e Vue.js, sempre disposto a aprender mais</p>
-          <div class="status">
-            <div>
-              <h1 id="seguidores">0</h1>
-              <p>Seguidores</p>
-            </div>
-            <div>
-              <h1 id="seguindo">0</h1>
-              <p>Seguindo</p>
-            </div>
-            <div>
-              <h1 id="repo">0</h1>
-              <p>Repositórios</p>
-            </div>
+        <div class="project" style="background-image: url(./assets/viwn.png);">
+          <div>
+            <h3>Viwn</h3>
+            <p>Um dos meus primeiros projetos, você pode minificar seus sites deixando o carregamento mais rápido.</p>
+            <a href="https://viwn.kauadev.xyz" target="_blank">Ver site</a>
+          </div>
+        </div>
+
+        <div class="project" style="background-image: url(./assets/ranek.png);">
+          <div>
+            <h3>Ranek</h3>
+            <p>Um projeto para praticar Vue.js, não deve responsividade para mobile</p>
+            <a href="https://ranek.kauadev.xyz" target="_blank">Ver site</a>
+          </div>
+        </div>
+
+        <div class="project" style="background-image: url(./assets/kouder.png);">
+          <div>
+            <h3>Kouder</h3>
+            <p>Um projeto que trabalho atualmente, onde você pode fazer orçamento de seus sites</p>
+            <a href="https://kouder.org" target="_blank">Ver site</a>
           </div>
         </div>
       </div>
-      <div class="separator"></div>
-      <div class="sobreinfo" join-animation="right">
-        <h1 class="title-separator">Sobre</h1>
-        <p>
-          Ei, eu sou um desenvolvedor front-end, especialista em criar telas lindas e funcionais que vão te deixar de queixo caído.
-          <br><br>
-          Meu foco é em front-end porem também tenho algumas habilidades em PHP e consigo criar um back-end com API REST. Não é muita coisa, mas já ajuda bastante, né?
-          <br><br>
-          Ah, e se você estiver procurando por um desenvolvedor front-end para o seu projeto, é só dar um grito! Estou sempre em busca de desafios novos e interessantes. E, claro, se você quiser bater um papo sobre o último episódio de sua série favorita ou qualquer outra coisa, pode contar comigo!
-        </p>
-        <a class="button" href="">BAIXAR CV</a>
-      </div>
     </section>
 
-    <section class="spacing" id="skills">
-      <div>
-        <h1 class="title-separator" join-animation="top">Minhas Habilidades</h1>
-        <p join-animation="top">Tenho habilidades em design, user experience e programação front-end (especialmente programação!). Li livros e fiz cursos para aprimorar minhas habilidades nesta área. Se você precisa de alguém com expertise em front-end, conte comigo!</p>
+    <section class="contato" id="contato">
+      <span class="separator"></span>
+      <div class="socialmedias">
+        <a href="https://instagram.com/okaua__z?igshid=ZDdkNTZiNTM="><img src="./assets/instagram footer.svg" alt="Instagram"></a>
 
-        <div class="skills" join-animation="top"></div>
+        <a href="https://www.linkedin.com/in/kau%C3%A3-braz-303536256/"><img src="./assets/linkedin.svg" alt="Linkedin"></a>
+
+        <a href="https://twitter.com/oKauaDev"><img src="./assets/twitter.svg" alt="Twitter"></a>
+        <a href="https://discordapp.com/users/668849866805477398"><img src="./assets/discord footer.svg" alt="Discord"></a>
       </div>
-      <img src="./assets/Skills-Decorations.svg">
+      <h4>ou me envie um email</h4>
+      <h2>kauacomtil021@gmail.com</h2>
     </section>
-
-    <section class="spacing" id="projetos">
-      <h1 class="title-separator" join-animation="left">Meus Projetos</h1>
-      <div class="filter" join-animation="left">
-        <img id="img-filter" src="./assets/filter.svg">
-        <button id="todos" query="*">TODOS</button>
-        <button id="front" query="front">FRONT-END</button>
-        <button id="back" query="back">BACK-END</button>
-      </div>
-      <div class="projetos"></div>
-    </section>
-
-    <section id="contato" class="spacing">
-      <h1 class="title-separator" join-animation="top">Entre em contato</h1>
-      <p join-animation="top">Vamos tomar um café juntos? Entre em contato comigo e a primeira xícara é por minha conta!</p>
-      <div>
-        <div class="redessociais">
-          <a href="https://github.com/oKauaDev"><img src="./assets/github.svg"></a>
-          <a href="https://www.linkedin.com/in/kauabrazdev"><img src="./assets/linkedin.svg"></a>
-          <a href="https://discordapp.com/users/668849866805477398"><img src="./assets/discord.svg"></a>
-          <a href="https://twitter.com/oKauaDev?t=TnZlX-aasktsD02dOh0q8w&s=09"><img src="./assets/twitter.svg"></a>
-        </div>
-      </div>
-    </section>
-
+    <footer>
+      <span class="separator"></span>
+      <p>Site criado por Kauã Braz. Todos os direitos reservados.</p>
+    </footer>
   </div>
-  <footer>Kauã. Todos os direitos reservados.</footer>
-
-  <script src="./main.js" type="module"></script>
 </body>
 
 </html>

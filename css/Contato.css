@@ -1,26 +1,42 @@
-#contato > h1 {
-  width: max-content;
-  margin: 0 auto;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  margin-bottom: 12px;
-}
-
-#contato > p {
-  text-align: center;
+.separator {
+  display: block;
   width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
-  margin-top: 16px;
-  margin-bottom: 40px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: 16.146vh;
+  margin-bottom: 32px;
 }
 
-#contato .redessociais {
+.socialmedias {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 40px;
+}
+
+.contato > h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: var(--s-4);
+  text-align: center;
+  margin: 40px 0;
+}
+
+.contato > h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--s-1);
+}
+
+@media (max-width: 600px) {
+  .contato > h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
 }
