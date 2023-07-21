@@ -1,113 +1,165 @@
-import Image from 'next/image'
+import AboutChunk from "@/components/AboutChunk/AboutChunk";
+import ButtonAction from "@/components/ButtonAction/ButtonAction";
+import Navbar from "@/components/Navbar/Navbar";
+import Projects from "@/components/Projects/Projects";
+import ScrollTo from "@/components/ScrollTo/ScrollTo";
+import SessionTitle from "@/components/SessionTitle/SessionTitle";
+import redesociais from "@/constants/redesociais";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <section>
+      <Navbar />
+      <div className="mt-[6.25rem] animation-left">
+        <section>
+          <Image
+            src="/perfil.jpg"
+            alt="Foto de perfil"
+            priority={true}
+            className="rounded-full mx-auto block"
+            width={200}
+            height={200}
+          />
+          <h1 className="text-center mt-5 text-4.5xl leading-tight font-bold tracking-wider">
+            Kauã Braz
+          </h1>
+          <p className="leading-relaxed text-support-900 text-center mt-5">
+            Desenvolvedor front-end e entusiasta da programação.
+          </p>
+          <ButtonAction
+            className="mx-auto mt-10"
+            clickText="EMAIL COPIADO!!"
+            copy="kauacomtil021@gmail.com"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+            ENTRE EM CONTATO
+          </ButtonAction>
+        </section>
+        <section className="mt-vh160px" id="sobre">
+          <SessionTitle title="Sobre mim" subtitle="veja um pouco" />
+          <div className="grid grid-cols-3 gap-8 mt-8 lg:grid-cols-2 sm:flex sm:flex-col">
+            <AboutChunk
+              emoteurl="/💻.png"
+              title="Programador"
+              text={
+                <>
+                  Sou desenvolvedor front-end e tenho conhecimento nas
+                  linguagens de programação{" "}
+                  <span className="text-primary-300">JavaScript</span>,{" "}
+                  <span className="text-primary-300">TypeScript</span> e{" "}
+                  <span className="text-primary-300">PHP</span>, caso seja
+                  necessário desenvolver um back-end simples.
+                </>
+              }
             />
-          </a>
-        </div>
+
+            <AboutChunk
+              emoteurl="/🎨.png"
+              title="Designer UI/UX"
+              text={
+                <>
+                  Como designer, crio telas com diferentes{" "}
+                  <span className="text-primary-300">temas</span> e{" "}
+                  <span className="text-primary-300">formatos</span>,
+                  priorizando a interatividade do usuário e buscando entregar o
+                  melhor resultado logo após a abertura do site.
+                </>
+              }
+            />
+
+            <AboutChunk
+              emoteurl="/📚.png"
+              title="Estudante"
+              text={
+                <>
+                  Ainda sou estudante de{" "}
+                  <span className="text-primary-300">ensino médio</span>, porém
+                  já fiz{" "}
+                  <span className="text-primary-300">cursos externos</span> de
+                  design e programação. Continuo estudando para me manter
+                  atualizado nesse mercado em constante evolução.
+                </>
+              }
+            />
+          </div>
+          <h2 className="font-bold text-2xl text-support-800 tracking-wider text-center mt-[3.75rem]">
+            O QUE USO PARA TRABALHAR
+          </h2>
+          <div className="flex items-center justify-center flex-wrap gap-[3.75rem] mt-5 md:gap-8 sm:gap-4">
+            <div className="flex items-center gap-4">
+              <Image src="/react.svg" alt="React logo" width={32} height={32} />
+              <p className="font-semibold tracking-wide leading-8">React.JS</p>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Image
+                src="/tailwindcss.svg"
+                alt="TailwindCSS logo"
+                width={32}
+                height={32}
+              />
+              <p className="font-semibold tracking-wide leading-8">
+                TailwindCSS
+              </p>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Image src="/nextjs.svg" alt="Next logo" width={32} height={32} />
+              <p className="font-semibold tracking-wide leading-8">Next.JS</p>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Image src="/vuejs.svg" alt="Vue logo" width={32} height={32} />
+              <p className="font-semibold tracking-wide leading-8">Vue.JS</p>
+            </div>
+          </div>
+        </section>
+        <section className="mt-vh160px" id="projects">
+          <SessionTitle title="Projetos" subtitle="olhe meus" />
+          <Projects />
+        </section>
+        <section className="mt-vh160px" id="contact">
+          <SessionTitle title="Contato" subtitle="entre em" />
+          <p className="max-w-sm w-full mt-8 text-support-1000">
+            Entre em contato comigo pelas minhas redes sociais, Atendo mais
+            rápido pelo{" "}
+            <a
+              href="https://discordapp.com/users/668849866805477398"
+              className="text-primary-300"
+            >
+              Discord
+            </a>
+            !
+          </p>
+          <div className="mt-6 flex gap-8 items-center">
+            {redesociais.map((social, i) => {
+              return (
+                <a href={social.link} key={i}>
+                  <Image
+                    src={social.img}
+                    alt="Rede Social"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              );
+            })}
+          </div>
+          <p className="my-6 text-support-1000">
+            Ou se preferir entre em contato comigo pelo email.
+          </p>
+          <ButtonAction
+            clickText="EMAIL COPIADO!!"
+            copy="kauacomtil021@gmail.com"
+          >
+            kauacomtil021@gmail.com
+          </ButtonAction>
+        </section>
+        <footer className="mt-vh160px text-support-1000 text-center">
+          Kauã braz. Todos os direitos reservados.
+        </footer>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <ScrollTo />
+    </section>
+  );
 }
