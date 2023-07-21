@@ -17,6 +17,7 @@ const ProjectImage = ({ src }: { src: string | undefined }) => {
       alt="Imagem ilustrativa do projeto"
       width={window.innerWidth}
       height={window.innerHeight}
+      loading="eager"
     />
   );
 };

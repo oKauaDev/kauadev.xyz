@@ -8,7 +8,6 @@
     "**/Thumbs.db": true,
     ".gitignore": true,
     "next-env.d.ts": true,
-    "next.config.js": true,
     "package-lock.json": true,
     "postcss.config.js": true,
     ".vscode": true,

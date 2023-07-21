@@ -16,9 +16,10 @@ export default function Home() {
           <Image
             src="/perfil.jpg"
             alt="Foto de perfil"
-            priority={true}
             className="rounded-full mx-auto block"
             width={200}
+            quality={50}
+            loading="eager"
             height={200}
           />
           <h1 className="text-center mt-5 text-4.5xl leading-tight font-bold tracking-wider">
