@@ -40,7 +40,7 @@ export default function Home() {
           <SessionTitle title="Sobre mim" subtitle="veja um pouco" />
           <div className="grid grid-cols-3 gap-8 mt-8 lg:grid-cols-2 sm:flex sm:flex-col">
             <AboutChunk
-              emoteurl="/💻.png"
+              emoteURL="/💻.png"
               title="Programador"
               text={
                 <>
@@ -55,7 +55,7 @@ export default function Home() {
             />
 
             <AboutChunk
-              emoteurl="/🎨.png"
+              emoteURL="/🎨.png"
               title="Designer UI/UX"
               text={
                 <>
@@ -69,7 +69,7 @@ export default function Home() {
             />
 
             <AboutChunk
-              emoteurl="/📚.png"
+              emoteURL="/📚.png"
               title="Estudante"
               text={
                 <>
@@ -157,7 +157,7 @@ export default function Home() {
           </ButtonAction>
         </section>
         <footer className="mt-vh160px text-support-1000 text-center">
-          Kauã braz. Todos os direitos reservados.
+          Kauã Braz. Todos os direitos reservados.
         </footer>
       </div>
       <ScrollTo />

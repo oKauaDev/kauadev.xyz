@@ -1,7 +1,7 @@
 import React from "react";
 
 export interface AboutChunkTypes {
-  emoteurl: string;
+  emoteURL: string;
   title: string;
   text: React.ReactNode | string;
 }

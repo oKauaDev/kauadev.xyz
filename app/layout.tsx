@@ -11,7 +11,7 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "Kauã Braz",
   description:
-    "Desenvolvedor front-end de 17 anos, especializado em Next.js, React.js, JavaScript, Typescript e Tailwind CSS. Minha paixão pela web me levou a também me tornar um habilidoso web designer. Descubra mais sobre meus projetos inovadores e soluções criativas neste website.",
+    "Portfolio de um desenvolvedor front-end de 17 anos, especializado em Next.js, React.js, JavaScript, Typescript e Tailwind CSS. Minha paixão pela web me levou a também me tornar um web designer. Descubra mais sobre meus projetos inovadores e soluções criativas neste portfolio.",
 };
 
 export default function RootLayout({

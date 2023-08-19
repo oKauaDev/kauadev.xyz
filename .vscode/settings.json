@@ -13,5 +13,6 @@
     ".vscode": true,
     "node_modules": true,
     ".next": true
-  }
+  },
+  "cSpell.words": ["Kauã", "nextjs", "redesociais", "tailwindcss", "vuejs"]
 }

@@ -2,11 +2,11 @@ import { AboutChunkTypes } from "@/types/components/AboutChunk";
 import Image from "next/image";
 import React from "react";
 
-const AboutChunk: React.FC<AboutChunkTypes> = ({ emoteurl, title, text }) => {
+const AboutChunk: React.FC<AboutChunkTypes> = ({ emoteURL, title, text }) => {
   return (
     <div className="py-8 px-4 bg-support-200 rounded">
       <Image
-        src={emoteurl}
+        src={emoteURL}
         alt={`Emoji de ${title}`}
         width={32}
         height={32}
