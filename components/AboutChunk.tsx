@@ -10,7 +10,7 @@ const AboutChunk: React.FC<AboutChunkTypes> = ({ emoteURL, title, text }) => {
         alt={`Emoji de ${title}`}
         width={32}
         height={32}
-        className="block mx-auto"
+        className="block mx-auto w-8 h-8"
       />
       <h2 className="mt-2 mb-3 text-support-1000 font-semibold text-2xl leading-snug text-center">
         {title}

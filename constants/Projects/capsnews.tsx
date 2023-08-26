@@ -2,7 +2,7 @@ import { ProjectTypes } from "@/types/constants/projects";
 
 const capsnews: ProjectTypes = {
   name: "CapsNews",
-  img: "/projects/capsnews.png",
+  img: "/projects/capsnews.webp",
   smallDescription:
     "Um clone do site TabNews, onde você pode realizar postagens sobre assuntos de tecnologia.",
   technologies: [

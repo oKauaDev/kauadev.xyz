@@ -2,7 +2,7 @@ import { ProjectTypes } from "@/types/constants/projects";
 
 const dogs: ProjectTypes = {
   name: "Dogs",
-  img: "/projects/dogs.png",
+  img: "/projects/dogs.webp",
   smallDescription:
     "Uma rede social feita para cachorros, foi um projeto feino no curso de React.JS da Origamid.",
   technologies: ["React.JS"],

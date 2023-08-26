@@ -12,18 +12,20 @@ const Navbar = () => {
       "border-none after:rotate-45 before:rotate-[135deg] after:-top-[4.5px]",
   };
 
-  const desactiveNav = {
+  const desativeNav = {
     nav: "md:invisible md:w-0",
   };
 
-  if (nav) {
+  React.useEffect(() => {
     if (typeof window !== "undefined") {
-      window.document.body.style.overflow = "hidden";
-      window.scroll(0, 0);
+      if (nav) {
+        window.document.body.style.overflow = "hidden";
+        window.scroll(0, 0);
+      } else {
+        window.document.body.style.overflow = "auto";
+      }
     }
-  } else if (typeof window !== "undefined") {
-    window.document.body.style.overflow = "auto";
-  }
+  }, [nav]);
 
   React.useEffect(() => {
     if (typeof window !== "undefined") {
@@ -35,13 +37,13 @@ const Navbar = () => {
     <header className="flex items-center justify-between w-full">
       <Link
         href="/"
-        className="bg-primary-100 px-3 py-1 rounded text-primary-300 text-xl"
+        className="bg-primary-100 px-3 py-1 rounded text-primary-400 text-xl"
       >
         Kauã
       </Link>
       <nav
         className={`flex gap-8 items-center md:h-full md:visible md:flex-col md:gap-4 md:items-start md:fixed md:pt-[60px] md:bg-white md:z-50 md:left-0 md:top-0 md:transition-all md:duration-300 md:shadow-navbar md:overflow-hidden ${
-          nav ? activeNav.nav : desactiveNav.nav
+          nav ? activeNav.nav : desativeNav.nav
         }`}
       >
         <Link

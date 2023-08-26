@@ -1,23 +1,17 @@
 "use client";
 
-import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { ImageOptimization } from "@/components/ImageOptimization";
 import React from "react";
 
 const ProjectImage = ({ src }: { src: string | undefined }) => {
-  const router = useRouter();
-
-  if (!src) {
-    router.push("/");
-  }
-
   return (
-    <Image
+    <ImageOptimization
       src={src ?? ""}
+      qualityControl={500}
       alt="Imagem ilustrativa do projeto"
       width={window.innerWidth}
       height={window.innerHeight}
-      loading="eager"
+      priority={false}
     />
   );
 };

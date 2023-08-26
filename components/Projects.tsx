@@ -2,7 +2,7 @@
 
 import projects from "@/constants/projects";
 import React from "react";
-import ButtonAction from "../ButtonAction/ButtonAction";
+import ButtonAction from "./ButtonAction";
 import { useRouter } from "next/navigation";
 
 const Projects = () => {

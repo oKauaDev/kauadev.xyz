@@ -2,7 +2,7 @@ import { ProjectTypes } from "@/types/constants/projects";
 
 const pedal: ProjectTypes = {
   name: "Pedal",
-  img: "/projects/pedal.png",
+  img: "/projects/pedal.webp",
   smallDescription:
     "Um site de aluguel de bicicletas fictício, feito para treinar meu TailwindCSS.",
   technologies: ["TailwindCSS", "React.JS", "Typescript", "UI/UX"],

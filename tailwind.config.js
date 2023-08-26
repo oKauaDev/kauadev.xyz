@@ -35,7 +35,7 @@ module.exports = {
         vh160px: "22.222vh",
       },
       backgroundImage: {
-        "background-container": "url('../public/background-container.jpg')",
+        "background-container": "url('../public/background-container.webp')",
       },
       boxShadow: {
         container: "0px 0px 8px 2px rgba(0, 0, 0, 0.05);",

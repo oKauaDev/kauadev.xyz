@@ -2,7 +2,7 @@ import { ProjectTypes } from "@/types/constants/projects";
 
 const metriun: ProjectTypes = {
   name: "Metriun",
-  img: "/projects/metriun.png",
+  img: "/projects/metriun.webp",
   smallDescription:
     "Um site de gráficos para facilitar a administração e a tomada de decisões da sua empresa",
   technologies: ["React.JS", "PHP", "UI/UX", "Laravel", "Typescript"],

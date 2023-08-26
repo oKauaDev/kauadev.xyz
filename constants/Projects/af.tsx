@@ -2,7 +2,7 @@ import { ProjectTypes } from "@/types/constants/projects";
 
 const af: ProjectTypes = {
   name: "Animais Fantásticos",
-  img: "/projects/animais-fantasticos.png",
+  img: "/projects/animais-fantasticos.webp",
   smallDescription:
     "Animais Fantásticos, um site feito no meu curso de Javascript.",
   technologies: ["Javascript"],
