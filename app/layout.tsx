@@ -1,6 +1,8 @@
+import { ContextProvider } from "@/contexts/Context";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
+import { Loading } from "@/components/Loading";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
@@ -24,7 +26,10 @@ export default function RootLayout({
       <body className={lato.className}>
         <div className="px-vw160px bg-background-container bg-cover bg-opacity-70 min-h-screen md:px-vw64px">
           <div className="bg-white shadow-container h-full px-vw64px py-[60px]">
-            {children}
+            <ContextProvider>
+              <Loading />
+              {children}
+            </ContextProvider>
           </div>
         </div>
       </body>

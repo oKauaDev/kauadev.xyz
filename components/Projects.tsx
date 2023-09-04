@@ -4,9 +4,12 @@ import projects from "@/constants/projects";
 import React from "react";
 import ButtonAction from "./ButtonAction";
 import { useRouter } from "next/navigation";
+import { Loading } from "@/components/Loading";
+import { Context } from "@/contexts/Context";
 
 const Projects = () => {
   const router = useRouter();
+  const context = React.useContext(Context);
   const [mobile, setMobile] = React.useState<boolean>(false);
   const [hide, setHide] = React.useState<boolean>(false);
   const [projectsKeys, setProjectsKeys] = React.useState(Object.keys(projects));
@@ -45,6 +48,7 @@ const Projects = () => {
   }, []);
 
   function transferTo(project: string) {
+    context?.setLoading(true);
     router.push(`/project/${project}`);
   }
 

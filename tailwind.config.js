@@ -7,6 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionTimingFunction: {
+        "loading-cubic-bezier": "cubic-bezier(0, 1, 1, 0)",
+      },
+      keyframes: {
+        scaleUp: {
+          "0%": { transform: "translate(-50%, -50%) scale(0)" },
+          "60%": { transform: "translate(-50%, -50%)  scale(1)" },
+        },
+        pulse: {
+          "0%, 60%, 100%": { transform: "scale(1)" },
+          "80%": { transform: "scale(1.2)" },
+        },
+      },
+      animation: {
+        scaleUp: "scaleUp 1s linear infinite",
+        pulse: "pulse 1s linear infinite",
+      },
       colors: {
         primary: {
           100: "#D7B4FA",

@@ -7,7 +7,7 @@ const ScrollTo = () => {
   const params = useSearchParams();
   React.useEffect(() => {
     setTimeout(() => {
-      const navTO = params.getAll("n")[0];
+      const navTO = params.getAll("s")[0];
       const element = document.getElementById(navTO);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });

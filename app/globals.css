@@ -34,3 +34,14 @@ body::-webkit-scrollbar-thumb {
     opacity: initial;
   }
 }
+
+.animate-transition-function {
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.animation-left {
+  transform: translate3d(-100px, 0px, 0px);
+  opacity: 0;
+
+  animation: animation-left 0.4s forwards;
+}

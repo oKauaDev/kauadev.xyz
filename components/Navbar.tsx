@@ -48,21 +48,21 @@ const Navbar = () => {
       >
         <Link
           onPointerDown={() => setNav(false)}
-          href="/?n=sobre"
+          href="/?s=sobre"
           className="block text-xl font-medium leading-tight whitespace-nowrap"
         >
           Sobre mim
         </Link>
         <Link
           onPointerDown={() => setNav(false)}
-          href="/?n=projects"
+          href="/?s=projects"
           className="block text-xl font-medium leading-tight"
         >
           Projetos
         </Link>
         <Link
           onPointerDown={() => setNav(false)}
-          href="/?n=contact"
+          href="/?s=contact"
           className="block text-xl font-medium leading-tight"
         >
           Contato

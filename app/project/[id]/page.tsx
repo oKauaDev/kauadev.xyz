@@ -4,6 +4,7 @@ import ProjectImage from "./components/ProjectImage";
 import { ProjectTypes } from "@/types/constants/projects";
 import { Footer } from "@/components/Footer";
 import { CheckRouter } from "./components/CheckRouter";
+import { SetLoading } from "@/components/SetLoading";
 
 export default function Home({ params }: { params: { id: string } }) {
   const project: ProjectTypes | undefined = projects[params.id];
@@ -11,6 +12,7 @@ export default function Home({ params }: { params: { id: string } }) {
   return (
     <section>
       <CheckRouter project={project} />
+      <SetLoading value={false} />
       <Navbar />
       <div className="mt-[6.25rem] animation-left">
         <a href={project?.link ? project.link : ""}>
