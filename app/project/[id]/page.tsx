@@ -20,14 +20,14 @@ export default function Home({ params }: { params: { id: string } }) {
         </a>
         <div className="mt-16 mb-20 flex gap-8 items-center justify-between sm:flex-col sm:items-start sm:justify-normal">
           <div>
-            <h1 className="text-[2.5rem] font-bold tracking-wider">
+            <h1 className="text-[2.5rem] font-bold tracking-wider dark:text-support-100">
               {project?.name}
             </h1>
             <div className="flex flex-wrap gap-2 mt-4 max-w-md sm:mb-10">
               {project?.technologies.map((technology, i) => {
                 return (
                   <p
-                    className="px-2 py-1 bg-support-300 rounded-sm font-medium text-sm"
+                    className="px-2 py-1 bg-support-300 rounded-sm font-medium text-sm dark:bg-support-900 dark:text-support-100"
                     key={technology + i}
                   >
                     {technology}

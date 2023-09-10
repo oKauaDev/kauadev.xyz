@@ -10,10 +10,10 @@ const dogs: ProjectTypes = {
   link: "https://dogs.kauadev.xyz",
   description: (
     <>
-      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4">
+      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 dark:text-support-100">
         Sobre o projeto
       </h2>
-      <p className="text-support-900 leading-normal">
+      <p className="text-support-900 leading-normal dark:text-support-300">
         Dogs marcou o meu primeiro projeto desenvolvido em React.JS, onde
         mergulhei no aprendizado do framework e pude criar aplicativos
         incríveis! A experiência foi desafiadora e gratificante, permitindo-me
@@ -22,10 +22,10 @@ const dogs: ProjectTypes = {
         jornada abre para mim no mundo do desenvolvimento de aplicativos.
       </p>
 
-      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10">
+      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10 dark:text-support-100">
         O que aprendi
       </h2>
-      <p className="text-support-900 leading-normal mb-10">
+      <p className="text-support-900 leading-normal mb-10 dark:text-support-300">
         Após concluir esse projeto, alcancei um novo patamar de conhecimento ao
         aprender a utilizar os Contextos do React, bem como a implementar
         bibliotecas externas. Além disso, fui introduzido à sintaxe JSX, uma

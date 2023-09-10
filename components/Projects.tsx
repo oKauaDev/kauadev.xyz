@@ -58,18 +58,21 @@ const Projects = () => {
         const project = projects[projectRef];
 
         return (
-          <div key={projectRef} className="py-8 px-4 bg-support-200 relative">
-            <h2 className="text-2xl font-semibold mb-4 tracking-wider text-center">
+          <div
+            key={projectRef}
+            className="py-8 px-4 bg-support-200 dark:bg-support-900 relative"
+          >
+            <h2 className="text-2xl font-semibold mb-4 tracking-wider text-center text-support-1000 dark:text-support-100">
               {project.name}
             </h2>
-            <p className="text-support-900 text-base mb-5">
+            <p className="text-support-900 text-base mb-5 dark:text-support-200">
               {project.smallDescription}
             </p>
             <div className="flex flex-wrap gap-2 mb-20">
               {project.technologies.map((technologie, i) => {
                 return (
                   <p
-                    className="px-2 py-1 bg-support-300 rounded-sm font-medium text-sm"
+                    className="px-2 py-1 bg-support-300 rounded-sm font-medium text-sm dark:bg-support-800 dark:text-support-100"
                     key={projectRef + i}
                   >
                     {technologie}

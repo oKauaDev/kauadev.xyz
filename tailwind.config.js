@@ -5,6 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       transitionTimingFunction: {
@@ -53,6 +54,8 @@ module.exports = {
       },
       backgroundImage: {
         "background-container": "url('../public/background-container.webp')",
+        "background-container-dark":
+          "url('../public/background-container-dark.webp')",
       },
       boxShadow: {
         container: "0px 0px 8px 2px rgba(0, 0, 0, 0.05);",

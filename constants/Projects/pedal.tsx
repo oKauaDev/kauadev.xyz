@@ -10,10 +10,10 @@ const pedal: ProjectTypes = {
   link: "https://pedal.kauadev.xyz",
   description: (
     <>
-      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4">
+      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 dark:text-support-100">
         Sobre o projeto
       </h2>
-      <p className="text-support-900 leading-normal">
+      <p className="text-support-900 leading-normal dark:text-support-300">
         O projeto Pedal é um site fictício de aluguel de bicicletas, oferecendo
         um sistema de pagamento por hora de uso. Enfrentei o desafio de aprender
         e utilizar o Tailwind CSS pela primeira vez nesse projeto. Essa
@@ -26,10 +26,10 @@ const pedal: ProjectTypes = {
         emocionantes.
       </p>
 
-      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10">
+      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10 dark:text-support-100">
         O que aprendi
       </h2>
-      <p className="text-support-900 leading-normal mb-10">
+      <p className="text-support-900 leading-normal mb-10 dark:text-support-300">
         Nesse projeto, tive a oportunidade de mergulhar nos fundamentos do
         Tailwind CSS e aprender como utilizá-lo de forma eficaz. Com dedicação e
         prática, adquiri uma compreensão sólida dessa ferramenta e suas

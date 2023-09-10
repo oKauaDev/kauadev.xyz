@@ -9,10 +9,10 @@ const metriun: ProjectTypes = {
   link: "https://metriun.com",
   description: (
     <>
-      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4">
+      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 dark:text-support-100">
         Sobre o projeto
       </h2>
-      <p className="text-support-900 leading-normal">
+      <p className="text-support-900 leading-normal dark:text-support-300">
         Metriun não foi apenas um projeto, mas uma empresa que de fato ganhou
         vida. Foi meu primeiro empreendimento como desenvolvedor full-stack, um
         projeto ambicioso que possibilitou o controle dos dados da plataforma
@@ -23,10 +23,10 @@ const metriun: ProjectTypes = {
         profissional.
       </p>
 
-      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10">
+      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10 dark:text-support-100">
         Front-end
       </h2>
-      <p className="text-support-900 leading-normal mb-10">
+      <p className="text-support-900 leading-normal mb-10 dark:text-support-300">
         No front-end da Metriun, desenvolvi a plataforma utilizando React.JS e
         Typescript, enfrentando diversos desafios fantásticos ao longo do
         caminho. Com determinação e dedicação, conquistei soluções incríveis
@@ -36,10 +36,10 @@ const metriun: ProjectTypes = {
         enfrentar novos projetos desafiadores no futuro.
       </p>
 
-      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10">
+      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10 dark:text-support-100">
         Back-end
       </h2>
-      <p className="text-support-900 leading-normal mb-10">
+      <p className="text-support-900 leading-normal mb-10 dark:text-support-300">
         No desenvolvimento do back-end da Metriun, embarquei em uma jornada
         repleta de desafios, pois esse foi o meu primeiro projeto utilizando
         Laravel. O aprendizado e o domínio dessa tecnologia foram fundamentais
@@ -48,10 +48,10 @@ const metriun: ProjectTypes = {
         gratificante.
       </p>
 
-      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10">
+      <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 mt-10 dark:text-support-100">
         O que aprendi
       </h2>
-      <p className="text-support-900 leading-normal mb-10">
+      <p className="text-support-900 leading-normal mb-10 dark:text-support-300">
         Nesse projeto, vivenciei uma experiência incrível ao aprender a integrar
         o Typescript com o React.JS, o que trouxe mais segurança e robustez ao
         desenvolvimento. Além disso, mergulhei de cabeça no mundo do Laravel,

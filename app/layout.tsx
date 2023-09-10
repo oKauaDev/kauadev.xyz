@@ -24,8 +24,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={lato.className}>
-        <div className="px-vw160px bg-background-container bg-cover bg-opacity-70 min-h-screen md:px-vw64px">
-          <div className="bg-white shadow-container h-full px-vw64px py-[60px]">
+        <div className="px-vw160px bg-background-container bg-cover bg-opacity-70 min-h-screen md:px-vw64px dark:bg-background-container-dark">
+          <div className="bg-white shadow-container h-full px-vw64px py-[60px] dark:bg-support-1000">
             <ContextProvider>
               <Loading />
               {children}

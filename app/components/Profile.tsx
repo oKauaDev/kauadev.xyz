@@ -14,10 +14,10 @@ export const Profile = () => {
         height={200}
         priority
       />
-      <h1 className="text-center mt-5 text-4.5xl leading-tight font-bold tracking-wider">
+      <h1 className="text-center mt-5 text-4.5xl leading-tight font-bold tracking-wider dark:text-support-100">
         Kauã Braz
       </h1>
-      <p className="leading-relaxed text-support-900 text-center mt-5">
+      <p className="leading-relaxed text-support-900 text-center mt-5 dark:text-support-300">
         Desenvolvedor front-end e entusiasta da programação.
       </p>
       <ButtonAction
