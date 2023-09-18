@@ -17,7 +17,7 @@ export const Profile = () => {
       ),
     },
     {
-      title: "May 10th",
+      title: "10 de Maio",
       icon: (
         <Svg
           src="./bolo.svg"
@@ -26,7 +26,7 @@ export const Profile = () => {
       ),
     },
     {
-      title: "Started in 2021",
+      title: "Comecei em 2020",
       icon: (
         <Svg
           src="./calendario.svg"
