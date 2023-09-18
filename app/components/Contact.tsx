@@ -14,7 +14,7 @@ export const Contact = () => {
         pelo{" "}
         <a
           href="https://discordapp.com/users/668849866805477398"
-          className="text-primary-300"
+          className="text-primary-300 underline"
         >
           Discord
         </a>
