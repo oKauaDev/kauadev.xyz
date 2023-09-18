@@ -1,5 +1,4 @@
 import { SocialTypes } from "@/types/constants/redesociais";
-import { link } from "fs";
 
 const redesociais: SocialTypes[] = [
   {
