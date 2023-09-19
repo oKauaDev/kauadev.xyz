@@ -1,7 +1,6 @@
 import SessionTitle from "@/components/SessionTitle";
 import React from "react";
 import redesociais from "@/constants/redesociais";
-import Image from "next/image";
 import ButtonAction from "@/components/ButtonAction";
 import { Svg } from "@/components/Svg";
 
@@ -14,7 +13,7 @@ export const Contact = () => {
         pelo{" "}
         <a
           href="https://discordapp.com/users/668849866805477398"
-          className="text-primary-300 underline"
+          className="text-primary-300 underline dark:text-primary-100"
         >
           Discord
         </a>
