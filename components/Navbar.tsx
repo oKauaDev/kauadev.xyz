@@ -58,7 +58,7 @@ const Navbar = () => {
         </Link>
         <Link
           onPointerDown={() => setNav(false)}
-          href="/?s=projects"
+          href="/project"
           className="block text-xl font-medium leading-tight dark:text-support-100"
         >
           Projetos

@@ -7,8 +7,8 @@ import pedal from "./Projects/pedal";
 import peteria from "./Projects/peteria";
 
 const projects: ProjectsTypes = {
-  peteria,
   metriun,
+  peteria,
   dogs,
   pedal,
   capsnews,
