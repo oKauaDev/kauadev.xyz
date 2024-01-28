@@ -7,7 +7,7 @@ const pedal: ProjectTypes = {
     "Um site de aluguel de bicicletas fictício, feito para treinar meu TailwindCSS.",
   technologies: ["TailwindCSS", "React.JS", "Typescript", "UI/UX"],
   source: "https://github.com/oKauaDev/Pedal",
-  link: "https://pedal.kauadev.xyz",
+  link: "https://pedal.kauadev.site",
   description: (
     <>
       <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 dark:text-support-100">

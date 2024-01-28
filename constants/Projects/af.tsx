@@ -7,7 +7,7 @@ const af: ProjectTypes = {
     "Animais Fantásticos, um site feito no meu curso de Javascript.",
   technologies: ["Javascript"],
   source: "https://github.com/oKauaDev/animais-fantasticos",
-  link: "https://animais.kauadev.xyz",
+  link: "https://animais.kauadev.site",
   description: (
     <>
       <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 dark:text-support-100">

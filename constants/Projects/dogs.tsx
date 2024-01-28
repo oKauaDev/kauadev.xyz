@@ -7,7 +7,7 @@ const dogs: ProjectTypes = {
     "Uma rede social feita para cachorros, foi um projeto feino no curso de React.JS da Origamid.",
   technologies: ["React.JS"],
   source: "https://github.com/oKauaDev/Dogs",
-  link: "https://dogs.kauadev.xyz",
+  link: "https://dogs.kauadev.site",
   description: (
     <>
       <h2 className="text-3xl font-bold text-support-1000 tracking-wider mb-4 dark:text-support-100">
